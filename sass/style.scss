@@ -1,0 +1,67 @@
+@import "variables.scss";
+@import "modules.scss";
+
+#header {background: #fff; height: 68px; padding-top: 49px;}
+#header .logo {display: inline-block; padding-left: 37px;}
+.menu {float: right; padding-right: 35px;
+	ul li {float: left; position: relative;padding:12px 15px 36px; z-index: 3;
+		&.menu-icon {line-height: 30px;
+			img {vertical-align: middle;}
+			&:hover a {border-bottom: 0}
+		}
+		a {text-transform: uppercase; font-weight: bold; line-height: 30px; display: inline-block; font-size: 14px;}
+		&:hover > a, &.acitve > a {border-bottom: 3px solid $blue;}
+		.sub-menu {padding-left: 5px; padding-top: 5px; display: none; position: absolute; right:16px; top:78px; width: 297px; height: 163px; background: url(../images/sub-menu.png) repeat 0 0; box-shadow:1px 1px 1px 0px rgba(214, 214, 214, 0.3);}
+	}
+}
+
+.sub-menu .sm-item {width: 160px; float: right; clear: both; position: relative;z-index: 1; 
+	> a {padding:0 5px; display: block;}
+	.sm-content {position: absolute; left:5px; top:5px; display: none; left:-136px; top:0; z-index: -1;
+		p {margin:10px 5px 5px; clear: both;}
+		img {width:126px; height: 106px;}
+	}
+	&.active .sm-content {display: block;}
+	a:hover,&.active a{color:#fff; background: $blue;}
+}
+
+.flexslider .slides li {background-color: #000;
+	> a {float: right; width:68.7%;}
+	.flex-caption {background: #000; height: 100%;padding:59px 32px 10px 81px; float: left; width:31.3%;color:#fff; @include box-sizing(border-box);
+		h1 {font-size: 28px; background: url(../images/caption-h1.png) no-repeat 0 bottom; margin-bottom: 15px; padding-bottom: 19px;}
+		p {line-height: 16px; margin-bottom: 75px; font-size: 14px;}
+		img {width: auto;}
+	}
+}
+.note {background: #fff; height: 164px; text-align: center;
+	.inner {border-bottom: 5px solid #929292; height: 100%;}
+	.note-content {width:634px; margin:0 auto; padding-top: 28px;
+		p {font-weight: bold; font-size: 16px; padding-left: 51px; padding-top: 10px;}
+		img {float: left; padding-top: 16px;}
+		h1 {padding-top: 23px; text-align: left;padding-left: 80px;font-style: italic; color:#9c1921; font-size: 22px; font-family: "Palatino Linotype", arial, sans-serif;}
+		a.readmore {float: right; margin-right: 39px; margin-top: 6px; font-size: 13px;}
+	}
+}
+#home-content {margin-top: 5px;}
+.box {
+	@extend .clearfix;
+	.text{position: relative; padding:37px 37px 59px;}
+}
+.box.img-right {
+	.text{float:left; background: #fff;}
+	.image{float:right;}
+}
+.box.home-full { margin-top: 60px; margin-bottom: 55px;
+	.text{width: 24.9%; height: 522px;
+		.arrow-right {top:60px;}
+	}
+	> .image {width:52.7%; float: left;
+		img {max-height: 522px;}
+	}
+	.right-box {width:22.4%; float: right;
+		.orange {width: 85.6%; float: left; color:#fff; text-align: center;}
+		.image {float: left;
+			img {max-height: 262px;}
+		}
+	}
+} 

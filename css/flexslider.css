@@ -40,9 +40,3 @@ html[xmlns] .slides {display: block;}
 .flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
 .loading .flex-viewport { max-height: 300px; }
 .flexslider .slides { zoom: 1; }
-.flexslider .slides li {background-color: #000;}
-.flexslider .slides li > a {float: right; width:69%;}
-.flexslider .slides li .flex-caption {background: #000; height: 100%;padding:52px 36px 10px 81px; float: left; width:31%;color:#fff; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
-.flexslider .slides li .flex-caption h1 {background: url(../images/caption-h1.png) no-repeat 0 bottom; margin-bottom: 15px; padding-bottom: 15px;}
-.flexslider .slides li .flex-caption p {line-height: 15px; margin-bottom: 70px;}
-.flexslider .slides li .flex-caption img {width: auto;}
