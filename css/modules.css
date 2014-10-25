@@ -32,13 +32,13 @@ li {
 }
 
 body {
-  font: 12px arial, sans-serif;
+  font: 12px Arial, sans-serif;
   color: #333;
   background: url(../images/bg.png) repeat 0 0;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: iris_azo, arial, sans-serif;
+  font-family: "iris_azo", Arial, sans-serif;
 }
 
 .inner {

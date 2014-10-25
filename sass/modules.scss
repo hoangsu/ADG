@@ -1,22 +1,56 @@
-
+@mixin box-sizing($val) {box-sizing: $val; -moz-box-sizing: $val; -webkit-box-sizing: $val;}
+@mixin border-radius($radius) {border-radius: $radius;}
 *{margin:0; padding:0;}
 a {color:inherit; text-decoration: none;}
 img {border:none; max-width: 100%;}
 li {list-style-type: none;}
 body {font:12px $Arial; color:#333; background: url(../images/bg.png) repeat 0 0;}
 h1, h2, h3, h4, h5 {font-family: $IrisAzo;}
+h1 {font-size: 28px;}
 .inner {width:1182px; margin:auto;}
-.col50 {width:50%;}.col51 {width:51%;}.col49 {width:49%;}.full-section,.full-inner {width: 100%;}
+.col50 {width:48.9%;}.col51 {width:51%;}.col49 {width:49%;}
+.full-section,.full-inner {width: 100%;@extend .clearfix;}
+.full-inner {margin-bottom: 27px}
 .left {float:left;}.right {float: right;}
 .arrow-left {background: url(../images/arrow-l.png) no-repeat 0 0; width:19px; height: 38px; position: absolute; top:35px; left: -19px;}
 .arrow-right {background: url(../images/arrow-r.png) no-repeat 0 0; width:19px; height: 38px; position: absolute; top:35px; right: -19px;}
 .arrow-top {background: url(../images/arrow-top.png) no-repeat 0 0; width: 19px;  height: 9px; position: absolute; top:-9px; right:33px;}
-.button {display: inline-block; border-radius: 4px; padding:0 30px 0 25px; background: url(../images/arrow-button.png) no-repeat 86px center; line-height: 33px; height: 33px; text-transform: uppercase;color:#fff;}
+.button {display: inline-block; @include border-radius(4px); padding:0 33px 0 25px; background: url(../images/arrow-button.png) no-repeat 86px center; line-height: 33px; height: 33px; text-transform: uppercase;color:#fff;}
 .blue {background-color: $blue;}
+.blue1 {background-color: $blue1;}
+.blue2 {background-color: $blue2;}
 .orange {background-color: $orange;}
 .darkred {background-color: $darkred;}
-.blue-non {height: 31px; line-height: 31px; background-color: #fff; border:2px solid #03aaf0;color:#03aaf0; background-image:url(../images/arrow-button-nb.png); }
+.wood {background-color: $wood;}
+.blue-non {height: 31px; line-height: 31px; background-color: #fff; border:2px solid $blue1;color:$blue1; background-image:url(../images/arrow-button-nb.png); }
 .clear {clear:both;}
 .clearfix:after {content: "";display: table;clear: both;}
-@mixin box-sizing($val) {box-sizing: $val; -moz-box-sizing: $val; -webkit-box-sizing: $val;}
-@mixin border-radius($radius) {border-radius: $radius;}
+.box {
+	@extend .clearfix;
+	.text{position: relative; padding:38px 30px 59px; @include box-sizing(border-box); height: 324px;
+		p {font-size: 14px; line-height: 19px;}
+		.other {position:absolute;bottom:27px; left:38px;
+			.more-link {font-size: 13px; text-transform: uppercase; color:#666666; text-decoration: none; font-family: $IrisAzo; margin-left: 9px;}
+		}
+	}
+	.image {
+		image {height: 324px;}
+	}
+}
+.box.img-right {
+	.text{float:left; background: #fff;}
+	.image{float:right;}
+}
+.box.img-left {
+	.text{float:right; background: #fff;}
+	.image{float:left;}
+}
+h1.title-box { margin-bottom: 18px; font-size: 22px; line-height: 30px;
+	&:after {height: 3px; width: 72px; content:""; display: block; margin-top: 13px;}
+}
+h1.title-box.orange-line:after {background-color: $orange;}
+h1.title-box.blue-line:after {background-color: $blue;}
+h1.title-box.blue1-line:after {background-color: $blue1;}
+h1.title-box.blue2-line:after {background-color: $blue2;}
+h1.title-box.darkred-line:after {background-color: $darkred;}
+h1.title-box.wood-line:after {background-color: $wood;}

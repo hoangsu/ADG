@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('.menu > ul > li').hover(function() {
 		$(this).find('.sub-menu .sm-item').each(function(key,val) {
-			$(this).find('.sm-content').css('top', -30*key);
+			$(this).find('.sm-content').css('top', -28*key);
 		});
 		$(this).find('.sub-menu').show('fast', function() {
 			$('.sm-item.first > a').css({

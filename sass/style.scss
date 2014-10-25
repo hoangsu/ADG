@@ -16,7 +16,7 @@
 }
 
 .sub-menu .sm-item {width: 160px; float: right; clear: both; position: relative;z-index: 1; 
-	> a {padding:0 5px; display: block;}
+	> a {padding:0 5px; display: block; line-height: 28px;}
 	.sm-content {position: absolute; left:5px; top:5px; display: none; left:-136px; top:0; z-index: -1;
 		p {margin:10px 5px 5px; clear: both;}
 		img {width:126px; height: 106px;}
@@ -28,12 +28,12 @@
 .flexslider .slides li {background-color: #000;
 	> a {float: right; width:68.7%;}
 	.flex-caption {background: #000; height: 100%;padding:59px 32px 10px 81px; float: left; width:31.3%;color:#fff; @include box-sizing(border-box);
-		h1 {font-size: 28px; background: url(../images/caption-h1.png) no-repeat 0 bottom; margin-bottom: 15px; padding-bottom: 19px;}
+		h1 {font-size: 28px; background: url(../images/caption-h1.png) no-repeat 0 bottom; margin-bottom: 16px;}
 		p {line-height: 16px; margin-bottom: 75px; font-size: 14px;}
 		img {width: auto;}
 	}
 }
-.note {background: #fff; height: 164px; text-align: center;
+.note {background: #fff; height: 162px; text-align: center;
 	.inner {border-bottom: 5px solid #929292; height: 100%;}
 	.note-content {width:634px; margin:0 auto; padding-top: 28px;
 		p {font-weight: bold; font-size: 16px; padding-left: 51px; padding-top: 10px;}
@@ -42,26 +42,52 @@
 		a.readmore {float: right; margin-right: 39px; margin-top: 6px; font-size: 13px;}
 	}
 }
-#home-content {margin-top: 5px;}
-.box {
-	@extend .clearfix;
-	.text{position: relative; padding:37px 37px 59px;}
-}
-.box.img-right {
-	.text{float:left; background: #fff;}
-	.image{float:right;}
-}
-.box.home-full { margin-top: 60px; margin-bottom: 55px;
+.box.home-full { margin-top: 63px; margin-bottom: 27px;
 	.text{width: 24.9%; height: 522px;
 		.arrow-right {top:60px;}
+		h1.title-box {font-size: 28px; line-height: 38px;}
 	}
 	> .image {width:52.7%; float: left;
 		img {max-height: 522px;}
 	}
 	.right-box {width:22.4%; float: right;
-		.orange {width: 85.6%; float: left; color:#fff; text-align: center;}
+		.orange {width: 85.6%; float: left; color:#fff; text-align: center; height: 190px; @include box-sizing(border-box); padding: 43px 20px;
+			h3 {font-size: 20px; font-weight: normal; margin-bottom: 20px;}
+			p {font-size: 14px; line-height: 19px;}
+		}
 		.image {float: left;
 			img {max-height: 262px;}
 		}
 	}
 } 
+.join-text {margin-bottom: 9px; text-align: center;
+	h1 {line-height: 54px;}
+}
+.social {background: #034988; height: 180px; color:#fff;
+	.inner {background: url(../images/map.png) no-repeat 117px 0; padding-top: 36px; @include box-sizing(border-box); height: 100%;
+		.col25 { font-size: 14px;float: left; @include box-sizing(border-box); width:216px; margin-left: 34px; margin-right: 42px;
+			.icon {font: bold 18px $IrisAzo; background: url(../images/social.png) no-repeat 0 0; display: block; padding-left:50px; height: 40px; line-height: 34px; margin-bottom: 5px;
+				&.fb-icon {background-position: 0 0;}
+				&.tw-icon {background-position: 0 -78px;}
+				&.plus-icon {background-position: 0 -153px;}
+				&.yu-icon {background-position: 0 -228px;}
+			}
+			p {line-height: 19px; padding-left: 3px;}
+			a.link {color: #00aeef; display: block; padding-left: 3px;}
+			&:last-child {margin-right: 0}
+		}
+	}
+}
+#footer { background: #162b59; height: 187px; @include box-sizing(border-box); padding-top: 14px; color:#cccccc;
+	.inner {
+		.footer-col {width: 158px; border-right:1px solid #666666;padding-left: 37px; float: left; min-height: 131px;
+			h3.title {color:#33ccff; font-size: 16px;line-height: 22px; font-family: $Arial; margin-top: 10px;}
+			ul li { font-size: 14px; line-height: 22px;}
+		}
+	 }
+}
+.search-footer { float: left; padding-left: 40px; padding-top: 23px;
+	input {@include border-radius(4px); height: 33px; line-height: 33px\9;padding-left: 10px; padding-right: 7px; width:200px;float: left; border:none; position: relative;}
+	.search-button { height: 33px; line-height: 33px; background: url(../images/search-button.png) no-repeat center center #000; border: none; text-indent: -99999px; width:50px; @include border-radius(4px); margin-left: -5px;}
+	p.copyright {display: block; margin-top: 23px; font-size: 13px; float: left;}
+}
