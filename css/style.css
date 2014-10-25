@@ -56,17 +56,12 @@ h1 { font-size: 28px; }
 
 .clearfix:after, .full-section:after, .full-inner:after, .box:after { content: ""; display: table; clear: both; }
 
-.box .text { position: relative; padding: 38px 30px 59px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; height: 324px; }
+.box .text { background: #fff; float: left; position: relative; padding: 38px 30px 59px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; height: 324px; }
 .box .text p { font-size: 14px; line-height: 19px; }
 .box .text .other { position: absolute; bottom: 27px; left: 38px; }
 .box .text .other .more-link { font-size: 13px; text-transform: uppercase; color: #666666; text-decoration: none; font-family: "iris_azo", Arial, sans-serif; margin-left: 9px; }
+.box .image { float: left; }
 .box .image image { height: 324px; }
-
-.box.img-right .text { float: left; background: #fff; }
-.box.img-right .image { float: right; }
-
-.box.img-left .text { float: right; background: #fff; }
-.box.img-left .image { float: left; }
 
 h1.title-box { margin-bottom: 18px; font-size: 22px; line-height: 30px; }
 h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; margin-top: 13px; }

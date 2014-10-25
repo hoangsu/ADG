@@ -27,24 +27,17 @@ h1 {font-size: 28px;}
 .clearfix:after {content: "";display: table;clear: both;}
 .box {
 	@extend .clearfix;
-	.text{position: relative; padding:38px 30px 59px; @include box-sizing(border-box); height: 324px;
+	.text{background: #fff;float: left; position: relative; padding:38px 30px 59px; @include box-sizing(border-box); height: 324px;
 		p {font-size: 14px; line-height: 19px;}
 		.other {position:absolute;bottom:27px; left:38px;
 			.more-link {font-size: 13px; text-transform: uppercase; color:#666666; text-decoration: none; font-family: $IrisAzo; margin-left: 9px;}
 		}
 	}
-	.image {
+	.image { float: left;
 		image {height: 324px;}
 	}
 }
-.box.img-right {
-	.text{float:left; background: #fff;}
-	.image{float:right;}
-}
-.box.img-left {
-	.text{float:right; background: #fff;}
-	.image{float:left;}
-}
+
 h1.title-box { margin-bottom: 18px; font-size: 22px; line-height: 30px;
 	&:after {height: 3px; width: 72px; content:""; display: block; margin-top: 13px;}
 }
