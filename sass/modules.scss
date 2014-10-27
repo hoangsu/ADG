@@ -27,7 +27,7 @@ h1 {font-size: 28px;}
 .clearfix:after {content: "";display: table;clear: both;}
 .box {
 	@extend .clearfix;
-	.text{background: #fff;float: left; position: relative; padding:38px 30px 59px; @include box-sizing(border-box); height: 324px;
+	.text{background: #fff;float: left; position: relative; padding:28px 30px 59px 36px; @include box-sizing(border-box); height: 324px;
 		p {font-size: 14px; line-height: 19px;}
 		.other {position:absolute;bottom:27px; left:38px;
 			.more-link {font-size: 13px; text-transform: uppercase; color:#666666; text-decoration: none; font-family: $IrisAzo; margin-left: 9px;}
@@ -47,3 +47,10 @@ h1.title-box.blue1-line:after {background-color: $blue1;}
 h1.title-box.blue2-line:after {background-color: $blue2;}
 h1.title-box.darkred-line:after {background-color: $darkred;}
 h1.title-box.wood-line:after {background-color: $wood;}
+h1.title-box.white-line:after {background-color: #fff;}
+.top-banner {height: 225px;
+	.left-title {height: 100%; @include box-sizing(border-box); padding-top: 60px; padding-left: 82px;
+		h1 { font-size: 28px;}
+	}
+}
+.border-bottom5 {border-bottom: 5px solid #929292;}

@@ -11,7 +11,7 @@
 		}
 		a {text-transform: uppercase; font-weight: bold; line-height: 30px; display: inline-block; font-size: 14px;}
 		&:hover > a, &.acitve > a {border-bottom: 3px solid $blue;}
-		.sub-menu {padding-left: 5px; padding-top: 5px; display: none; position: absolute; right:16px; top:78px; width: 297px; height: 163px; background: url(../images/sub-menu.png) repeat 0 0; box-shadow:1px 1px 1px 0px rgba(214, 214, 214, 0.3);}
+		.sub-menu {padding-left: 5px; padding-top: 5px; display: none; position: absolute; right:16px; top:78px; width: 297px; height: 163px; background: url(../images/sub-menu.png) repeat 0 0; box-shadow:1px 1px 5px 0px rgba(0, 0, 0, 0.15);}
 	}
 }
 
@@ -28,7 +28,7 @@
 .flexslider .slides li {background-color: #000;
 	> a {float: right; width:68.7%;}
 	.flex-caption {background: #000; height: 100%;padding:59px 32px 10px 81px; float: left; width:31.3%;color:#fff; @include box-sizing(border-box);
-		h1 {font-size: 28px; background: url(../images/caption-h1.png) no-repeat 0 bottom; margin-bottom: 16px;}
+		h1 {margin-bottom: 16px; line-height: 34px; font-size: 28px;}
 		p {line-height: 16px; margin-bottom: 75px; font-size: 14px;}
 		img {width: auto;}
 	}
@@ -45,7 +45,7 @@
 .box.home-full { margin-top: 63px; margin-bottom: 27px;
 	.text{width: 24.9%; height: 522px;
 		.arrow-right {top:60px;}
-		h1.title-box {font-size: 28px; line-height: 38px;}
+		h1.title-box { line-height: 38px; font-size: 28px;}
 	}
 	> .image {width:52.7%; float: left;
 		img {max-height: 522px;}
@@ -91,3 +91,39 @@
 	.search-button { height: 33px; line-height: 33px; background: url(../images/search-button.png) no-repeat center center #000; border: none; text-indent: -99999px; width:50px; @include border-radius(4px); margin-left: -5px;}
 	p.copyright {display: block; margin-top: 23px; font-size: 13px; float: left;}
 }
+/* Overview page */
+.overview .full-inner{margin-bottom: 34px}
+.overview-banner {background: url(../images/o-banner.jpg) no-repeat 0 0; margin-bottom: 58px; 
+	.left-title {background: url(../images/bg-black.png) 0 0 repeat; width: 369px;
+		h1 {color:#fff;}
+	}
+}
+.overview-full {
+	.text {width:541px; height: 370px;} 
+	.image {width:641px;
+		img {max-height: 424px;}
+	}
+}
+.overview1046 {width: 1046px; margin-left: 37px; margin-bottom: 11px;
+	.image { width:540px;
+		img {max-height: 423px}
+	}
+	.text {width: 506px; height: 423px;}
+}
+.overview996 {width: 996px; margin-left: 148px; margin-bottom: 9px;
+	.image { width:568px;
+		img {max-height: 324px}
+	}
+	.text {width: 428px; height: 370px}
+}
+/* History page */
+.history-banner {background-image: url(../images/h-banner.jpg); margin-bottom: 0}
+.history-note { background: #fff;height: 225px; margin-bottom: 64px;
+	.inner {height: 100%;
+		.text { width:886px; margin:auto; text-align: justify;
+			h1 {padding-top: 30px; padding-bottom: 20px;}
+			p {font-size: 14px; line-height: 19px;}
+		}
+	}
+}
+.history .full-inner {margin-bottom: 0}
