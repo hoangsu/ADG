@@ -29,12 +29,13 @@ h1 {font-size: 28px;}
 	@extend .clearfix;
 	.text{background: #fff;float: left; position: relative; padding:28px 30px 59px 36px; @include box-sizing(border-box); height: 324px;
 		p {font-size: 14px; line-height: 19px;}
+		p.source {margin-top: 20px;}
 		.other {position:absolute;bottom:27px; left:38px;
 			.more-link {font-size: 13px; text-transform: uppercase; color:#666666; text-decoration: none; font-family: $IrisAzo; margin-left: 9px;}
 		}
 	}
 	.image { float: left;
-		image {height: 324px;}
+		img {height: 324px;}
 	}
 }
 
@@ -53,20 +54,30 @@ h1.title-box.white-line:after {background-color: #fff;}
 		h1 { font-size: 28px;}
 	}
 }
-.border-bottom5 {border-bottom: 5px solid #929292;}
+.border-bottom5 {border-bottom: 5px solid #929292; }
 .year-label {text-align: center; background: url(../images/year-label.png) no-repeat 0 0; width:90px; height: 55px; position: absolute; top:0; left:36px; color:#fff;
 	h1 { font-size: 22px; font-weight: normal; line-height: 40px;
 		span {color:#0099ff;}
 	} 
 }
-.history-box.box-video {
-	.video {width:437px; position: relative; z-index: 1; float: right;
-		video {max-width:100%; max-height: 100%;}
+.box-video {
+	.video { position: relative; z-index: 1; 
+		video {max-width:100%; max-height: 100%; }
 		.overlay { position: absolute; background: url(../images/video-overlay.png) repeat 0 0; width: 100%; height: 100%; text-align: center;
 			button {outline: none; position: absolute; top: 50%; left:50%; border:none; text-indent: -99999px; background: url(../images/video-icon.png) 0 0; margin-top: -20px; margin-left: -20px; width:40px; height: 40px; display: inline-block;vertical-align: middle; cursor: pointer;
 				&.pause {background-position: 0 bottom;}
 			}
 		}
 	}
+}
+.history-box.box-video {
+	.video {width:437px;float: right; }
 	.text {margin-top: -103px; width:100%; clear: both; padding-top: 140px; height: 299px;}
+}
+.group-box {
+	.text {padding-top: 0;
+		.date {border-bottom: 1px solid #999; height: 45px; margin-bottom: 15px;
+			p {line-height: 55px;font-size: 15px; font-weight: bold; }
+		}
+	} 
 }

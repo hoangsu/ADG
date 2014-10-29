@@ -10,10 +10,13 @@
 			&:hover a {border-bottom: 0}
 		}
 		a {text-transform: uppercase; font-weight: bold; line-height: 30px; display: inline-block; font-size: 14px;}
+		>a {border-bottom: 3px solid #fff;}
 		&:hover,&.acitve {
 			> a {border-bottom: 3px solid $blue;}
 			.sub-menu {display: block}
 		}
+		&.brand-menu:hover > a {border-bottom: 3px solid $darkred;}
+		&.new-menu:hover > a {border-bottom: 3px solid $orange;}
 		.sub-menu {padding-left: 5px; padding-top: 5px; display: none; position: absolute; right:16px; top:78px; width: 297px; height: 163px; background: url(../images/sub-menu.png) repeat 0 0; box-shadow:1px 1px 5px 0px rgba(0, 0, 0, 0.15);}
 	}
 }
@@ -27,7 +30,12 @@
 	&.active .sm-content,&:hover .sm-content {display: block;}
 	a:hover,&.active a{color:#fff; background: $blue;}
 }
-
+.brand-menu .sub-menu .sm-item {
+	a:hover,&.active a {background: $darkred;}
+}
+.new-menu .sub-menu .sm-item {
+	a:hover,&.active a {background: $orange;}
+}
 .flexslider .slides li {background-color: #000;
 	> a {float: right; width:68.7%;}
 	.flex-caption {background: #000; height: 100%;padding:59px 32px 10px 81px; float: left; width:31.3%;color:#fff; @include box-sizing(border-box);
@@ -51,7 +59,7 @@
 		h1.title-box { line-height: 38px; font-size: 28px;}
 	}
 	> .image {width:52.7%; float: left;
-		img {max-height: 522px;}
+		img {height: 522px;}
 	}
 	.right-box {width:22.4%; float: right;
 		.orange {width: 85.6%; float: left; color:#fff; text-align: center; height: 190px; @include box-sizing(border-box); padding: 43px 20px;
@@ -59,7 +67,7 @@
 			p {font-size: 14px; line-height: 19px;}
 		}
 		.image {float: left;
-			img {max-height: 262px;}
+			img {height: 262px;}
 		}
 	}
 } 
@@ -105,18 +113,18 @@
 .overview-full {
 	.text {width:541px; height: 370px;} 
 	.image {width:641px;
-		img {max-height: 424px;}
+		img {height: 424px;}
 	}
 }
 .overview1046 {width: 1046px; margin-left: 37px; margin-bottom: 11px;
 	.image { width:540px;
-		img {max-height: 423px}
+		img {height: 423px}
 	}
 	.text {width: 506px; height: 423px;}
 }
 .overview996 {width: 996px; margin-left: 148px; margin-bottom: 9px;
 	.image { width:568px;
-		img {max-height: 324px}
+		img {height: 324px}
 	}
 	.text {width: 428px; height: 370px}
 }
@@ -148,7 +156,6 @@
 }
 .history-box.box2010 {
 	.text {
-		
 		&:after {background-color: #4f2b1c;}
 	}
 }
@@ -176,3 +183,20 @@
 		h1 {color:#00aeef;}
 	}
 }
+/* News page */
+.group-page #header .inner{@extend .border-bottom5;height: 100%;}
+.group-news {margin-top: 65px;}
+.group-full {  width: 1144px;
+	.text {width: 503px; height: 387px;
+		h1 {font-size: 28px;}
+		.date{width: 260px;}
+	}
+	.image {
+		img {width:641px;height: 387px;}
+	}
+	&.box-video { float: right; background: #fff;  
+		.video {float: left; max-width:606px; margin-top:31px; height: 325px;}
+	}
+} 
+.group-full.first {float:right;}
+.group-news .top-footer {margin-top: 50px;}

@@ -11,10 +11,10 @@
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/adg.js"></script>
-<title>ADG Home page</title>
+<title>ADG báo chí</title>
 </head>
 
-<body>
+<body class="group-page">
 	<div id="header">
 		<div class="inner">
 			<div class="logo">
@@ -115,14 +115,14 @@
 						<div class="sub-menu">
 							<div class="arrow-top">
 							</div>
-							<div class="sm-item active">
+							<div class="sm-item ">
 								<a href="#">Tập đoàn</a>
 								<div class="sm-content">
 									<img src="images/tapdoan.jpg" alt="Tập đoàn">
 									<p>Even so, the claims have been reported across tech blogs as well as mainstream</p>
 								</div>
 							</div>
-							<div class="sm-item">
+							<div class="sm-item active">
 								<a href="#">Báo chí</a>
 								<div class="sm-content">
 									<img src="images/tapdoan.jpg" alt="Báo chí">
@@ -136,180 +136,136 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" charset="utf-8">
-	  $(window).load(function() {
-	    $('.flexslider').flexslider({
-	    	controlNav:false,
-	    	directionNav:false
-
-	    });
-	  });
-	</script>
-	<div id="home-slider">
-		<div class="inner">
-			<div class="flexslider">
-			  <ul class="slides">
-			    <li><a href="#" title=""><img src="images/ex.jpg" alt=""></a>
-			    	<div class="flex-caption">
-			    		<h1 class="title-box wood-line">Cửa gỗ vượt thời gian (2 dòng)</h1>
-			    		<p>Even so, the claims have been reported across tech  blogs as well as mainstream media including the independent</p>
-			    		<a href="#" class="logo-slider"><img src="images/huge.png" alt="huge"></a>
-			    	</div>
-			    </li>
-			    <li><a href="#" title=""><img src="images/ex.jpg" alt=""></a>
-			    	<div class="flex-caption">
-			    		<h1 class="title-box blue1-line">Cửa gỗ vượt thời gian (2 dòng)</h1>
-			    		<p>Even so, the claims have been reported across tech  blogs as well as mainstream media including the independent</p>
-			    		<a href="#" class="logo-slider"><img src="images/huge.png" alt="huge"></a>
-			    	</div>
-			    </li>
-			    <li><a href="#" title=""><img src="images/ex.jpg" alt=""></a>
-			    	<div class="flex-caption">
-			    		<h1 class="title-box blue-line">Cửa gỗ vượt thời gian (2 dòng)</h1>
-			    		<p>Even so, the claims have been reported across tech  blogs as well as mainstream media including the independent</p>
-			    		<a href="#" class="logo-slider"><img src="images/huge.png" alt="huge"></a>
-			    	</div>
-			    </li>
-			  </ul>
-			</div>
-			
-		</div>
-		
-	</div>
-	<div class="note full-section">
-		<div class="inner">
-			<div class="note-content">
-				<img src="images/heart.jpg" alt="heart">
-				<h1>"Chúng tôi sáng tạo sản phẩm cho cuộc sống tốt hơn."</h1>
-				<p>Thông điệp từ Chủ tịch</p>
-				<a href="#" class="readmore">Chi tiết &raquo;</a>
-			</div>
-			
-		</div>
-	</div>
-
-	<div id="home-content" class="main-content full-section">
+	<div class="main-content full-section group-news">
 		<div class="inner">
 			<div class="full-inner">
-				<div class="box per100 home-full">
+				<div class="box per100 group-box box-video group-full first">
+					<div class="video">
+						<div class="overlay">
+							<button>Play/Pause</button> 
+						</div>
+						<video height="325" id="video1">
+						  <source src="videos/big_buck_bunny.mp4" type="video/mp4">
+						  <source src="videos/big_buck_bunny.ogg" type="video/ogg">
+						  Your browser does not support HTML5 video.
+						</video>
+					</div>
+					<div class="text">
+						<div class="arrow-left">
+						</div>
+						<div class="date">
+							<p>20.10.2014</p>
+						</div>
+						<h1 class="title-box orange-line">These are all attributes that </h1>
+						<p>PepsiCo today strengthened its commitment to action on climate change by: announcing new goals for phasing out equipment with hydroflourocarbons (HFCs),signing both the Ceres BICEP Climate Declaration and the Prince of Wales’ Corporate Leaders Group Trillion</p>
+						<p class="source">Nguồn <b>www.vtv.vn</b></p>
+						<div class="other">
+							<a href="#" class="button orange">Chi Tiết</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="full-inner">
+				<div class="box group-box left col50 ">
+					<div class="image col51">
+						<img src="images/td2.jpg" alt="">
+					</div>
+					<div class="text col49">
+						<div class="date">
+							<p>20.10.2014</p>
+						</div>
+						<div class="arrow-left">
+						</div>
+						<h1 class="title-box orange-line">These are all attributes that </h1>
+						<p class="source">Nguồn <b>www.dantri.vn</b></p>
+						
+						<div class="other">
+							<a href="#" class="button orange">Chi Tiết</a>
+						</div>
+					</div>
+				</div>
+					<div class="box group-box right col50 ">
+						<div class="image col51">
+							<img src="images/td3.jpg" alt="">
+						</div>
+						<div class="text col49">
+							<div class="date">
+								<p>20.10.2014</p>
+							</div>
+							<div class="arrow-left">
+							</div>
+							<h1 class="title-box orange-line">These are all attributes that </h1>
+							<p class="source">Nguồn <b>www.bbc.com</b></p>
+							
+							<div class="other">
+								<a href="#" class="button orange">Chi Tiết</a>
+							</div>
+						</div>
+					</div>
+			</div>
+			
+			<div class="full-inner">
+				<div class="box group-box left col50 ">
+					<div class="text col49">
+						<div class="date">
+							<p>20.10.2014</p>
+						</div>
+						<div class="arrow-right">
+						</div>
+						<h1 class="title-box orange-line">These are all attributes that </h1>
+						<p class="source">Nguồn <b>www.cand.vn</b></p>
+						
+						<div class="other">
+							<a href="#" class="button orange">Chi Tiết</a>
+						</div>
+					</div>
+					<div class="image col51">
+						<img src="images/td4.jpg" alt="">
+					</div>
+				</div>
+					<div class="box group-box right col50 ">
+						<div class="text col49">
+							<div class="date">
+								<p>20.10.2014</p>
+							</div>
+							<div class="arrow-right">
+							</div>
+							<h1 class="title-box orange-line">These are all attributes that </h1>
+							<p class="source">Nguồn <b>www.vtv.vn</b></p>
+							
+							<div class="other">
+								<a href="#" class="button orange">Chi Tiết</a>
+							</div>
+						</div>
+						<div class="image col51">
+							<img src="images/td5.jpg" alt="">
+						</div>
+					</div>
+			</div>
+			<div class="full-inner">
+				<div class="box per100 group-box group-full last">
 					<div class="text">
 						<div class="arrow-right">
 						</div>
-						<h1 class="title-box orange-line">There are all attrubutes that</h1>
-						<p>Even so, the claims have been reported across tech  blogs as well as mainstream media including the independent</p>
+						<div class="date">
+							<p>20.10.2014</p>
+						</div>
+						<h1 class="title-box orange-line">These are all attributes that </h1>
+						<p>PepsiCo today strengthened its commitment to action on climate change by: announcing new goals for phasing out equipment with hydroflourocarbons (HFCs),signing both the Ceres BICEP Climate Declaration and the Prince of Wales’ Corporate Leaders Group Trillion</p>
+						<p class="source">Nguồn <b>www.kienthuc.vn</b></p>
 						<div class="other">
 							<a href="#" class="button orange">Chi Tiết</a>
-							<a href="#" class="more-link" title="">Tin tức</a>						
 						</div>
 					</div>
 					<div class="image">
-						<img src="images/t1.jpg" alt="">
-					</div>
-					<div class="right-box">
-						<div class="orange">
-							<h3>Bạn có biết!</h3>
-							<p>reported across tech blogs as well as mainstream media including the independent</p>
-						</div>
-						<div class="image">
-							<img src="images/t2.jpg" alt="">
-						</div>
+						<img src="images/td1.jpg" alt="">
 					</div>
 				</div>
-			</div>
-			<div class="full-inner">
-				<div class="box left col50 ">
-					<div class="image col51">
-						<img src="images/t3.jpg" alt="">
-					</div>
-					<div class="text col49">
-						<div class="arrow-left">
-						</div>
-						<h1 class="title-box blue-line">There are all attrubutes that</h1>
-						<p>Even so, the claims have been reported across tech  blogs as well as mainstream media including the independent</p>
-						<div class="other">
-							<a href="#" class="button blue">Chi Tiết</a>
-							<a href="#" class="more-link" title="">Sản phẩm</a>						
-						</div>
-					</div>
-				</div>
-					<div class="box right col50 ">
-						<div class="image col51">
-							<img src="images/t4.jpg" alt="">
-						</div>
-						<div class="text col49">
-							<div class="arrow-left">
-							</div>
-							<h1 class="title-box blue1-line">There are all attrubutes that</h1>
-							<p>Even so, the claims have been reported across tech  blogs as well as mainstream media including the independent</p>
-							<div class="other">
-								<a href="#" class="button blue-non">Chi Tiết</a>
-								<a href="#" class="more-link" title="">Sản phẩm</a>						
-							</div>
-						</div>
-					</div>
-			</div>
-			<div class="full-inner">
-				<div class="box left col50 ">
-					<div class="text col49">
-						<div class="arrow-right">
-						</div>
-						<h1 class="title-box blue2-line">There are all attrubutes that</h1>
-						<p>Even so, the claims have been reported across tech  blogs as well as mainstream media including the independent</p>
-						<div class="other">
-							<a href="#" class="button blue2">Chi Tiết</a>
-							<a href="#" class="more-link" title="">Tuyển dụng</a>						
-						</div>
-					</div>
-					<div class="image col51">
-						<img src="images/t5.jpg" alt="">
-					</div>
-				</div>
-					<div class="box right col50 ">
-						<div class="text col49">
-							<div class="arrow-right">
-							</div>
-							<h1 class="title-box darkred-line">There are all attrubutes that</h1>
-							<p>Even so, the claims have been reported across tech  blogs as well as mainstream media including the independent</p>
-							<div class="other">
-								<a href="#" class="button darkred">Chi Tiết</a>
-								<a href="#" class="more-link" title="">Nhãn hiệu</a>						
-							</div>
-						</div>
-						<div class="image col51">
-							<img src="images/t6.jpg" alt="">
-						</div>
-					</div>
-			</div>
-			<div class="join-text">
-				<h1>Join the Austdoor Group social network</h1>
 			</div>
 		</div>
-		<div class="clear">
-			</div>
-		<div class="full-section social">
-			<div class="inner">
-				<div class="col25">
-					<a href="facebook.com/austdoor" class="fb-icon icon" title="">austdoor group</a>
-					<p>Even so, the claims have been reported across tech  blogs as well</p>
-					<a href="facebook.com/austdoor" class="link" title="">Sign in the page</a>
-				</div>
-				<div class="col25">
-					<a href="twitter.com/austdoor" class="tw-icon icon" title="">austdoor group</a>
-					<p>Even so, the claims have been reported across tech  blogs as well</p>
-					<a href="twitter.com/austdoor" class="link" title="">Sign in the page</a>
-				</div>
-				<div class="col25">
-					<a href="plus.google.com/austdoor" class="plus-icon icon" title="">austdoor group</a>
-					<p>Even so, the claims have been reported across tech  blogs as well</p>
-					<a href="plus.google.com/austdoor" class="link" title="">Sign in the page</a>
-				</div>
-				<div class="col25">
-					<a href="youtube.com/austdoor" class="yu-icon icon" title="">austdoor group</a>
-					<p>Even so, the claims have been reported across tech  blogs as well</p>
-					<a href="youtube.com/austdoor" class="link" title="">Sign in the page</a>
-				</div>
-			</div>
-			
+		<div class="clear"></div>
+		<div class="full-section top-footer">
 		</div>
 	</div>
 	<div class="clear">
