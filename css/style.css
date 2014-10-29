@@ -86,6 +86,17 @@ h1.title-box.white-line:after { background-color: #fff; }
 
 .border-bottom5 { border-bottom: 5px solid #929292; }
 
+.year-label { text-align: center; background: url(../images/year-label.png) no-repeat 0 0; width: 90px; height: 55px; position: absolute; top: 0; left: 36px; color: #fff; }
+.year-label h1 { font-size: 22px; font-weight: normal; line-height: 40px; }
+.year-label h1 span { color: #0099ff; }
+
+.history-box.box-video .video { width: 437px; position: relative; z-index: 1; float: right; }
+.history-box.box-video .video video { max-width: 100%; max-height: 100%; }
+.history-box.box-video .video .overlay { position: absolute; background: url(../images/video-overlay.png) repeat 0 0; width: 100%; height: 100%; text-align: center; }
+.history-box.box-video .video .overlay button { outline: none; position: absolute; top: 50%; left: 50%; border: none; text-indent: -99999px; background: url(../images/video-icon.png) 0 0; margin-top: -20px; margin-left: -20px; width: 40px; height: 40px; display: inline-block; vertical-align: middle; cursor: pointer; }
+.history-box.box-video .video .overlay button.pause { background-position: 0 bottom; }
+.history-box.box-video .text { margin-top: -103px; width: 100%; clear: both; padding-top: 140px; height: 299px; }
+
 #header { background: #fff; height: 68px; padding-top: 49px; }
 
 #header .logo { display: inline-block; padding-left: 37px; }
@@ -97,14 +108,15 @@ h1.title-box.white-line:after { background-color: #fff; }
 .menu ul li.menu-icon:hover a { border-bottom: 0; }
 .menu ul li a { text-transform: uppercase; font-weight: bold; line-height: 30px; display: inline-block; font-size: 14px; }
 .menu ul li:hover > a, .menu ul li.acitve > a { border-bottom: 3px solid #005bac; }
+.menu ul li:hover .sub-menu, .menu ul li.acitve .sub-menu { display: block; }
 .menu ul li .sub-menu { padding-left: 5px; padding-top: 5px; display: none; position: absolute; right: 16px; top: 78px; width: 297px; height: 163px; background: url(../images/sub-menu.png) repeat 0 0; box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15); }
 
-.sub-menu .sm-item { width: 160px; float: right; clear: both; position: relative; z-index: 1; }
-.sub-menu .sm-item > a { padding: 0 5px; display: block; line-height: 28px; }
-.sub-menu .sm-item .sm-content { position: absolute; left: 5px; top: 5px; display: none; left: -136px; top: 0; z-index: -1; }
+.sub-menu .sm-item { width: 160px; float: right; clear: both; }
+.sub-menu .sm-item > a { padding: 0 5px; display: block; line-height: 28px; position: relative; z-index: 1; }
+.sub-menu .sm-item .sm-content { display: none; left: 5px; position: absolute; z-index: 0; top: 5px; }
 .sub-menu .sm-item .sm-content p { margin: 10px 5px 5px; clear: both; }
 .sub-menu .sm-item .sm-content img { width: 126px; height: 106px; }
-.sub-menu .sm-item.active .sm-content { display: block; }
+.sub-menu .sm-item.active .sm-content, .sub-menu .sm-item:hover .sm-content { display: block; }
 .sub-menu .sm-item a:hover, .sub-menu .sm-item.active a { color: #fff; background: #005bac; }
 
 .flexslider .slides li { background-color: #000; }
@@ -150,6 +162,8 @@ h1.title-box.white-line:after { background-color: #fff; }
 .social .inner .col25 a.link { color: #00aeef; display: block; padding-left: 3px; }
 .social .inner .col25:last-child { margin-right: 0; }
 
+.top-footer { background: #034988; height: 53px; }
+
 #footer { background: #162b59; height: 187px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding-top: 14px; color: #cccccc; }
 #footer .inner .footer-col { width: 158px; border-right: 1px solid #666666; padding-left: 37px; float: left; min-height: 131px; }
 #footer .inner .footer-col h3.title { color: #33ccff; font-size: 16px; line-height: 22px; font-family: Arial, sans-serif; margin-top: 10px; }
@@ -191,3 +205,33 @@ h1.title-box.white-line:after { background-color: #fff; }
 .history-note .inner .text p { font-size: 14px; line-height: 19px; }
 
 .history .full-inner { margin-bottom: 0; }
+
+.history-box .text { padding-top: 80px; height: 370px; }
+.history-box .text h1.history-title { font-size: 22px; font-weight: normal; margin-bottom: 18px; }
+.history-box .text:after { display: block; background: #005bac; width: 89px; height: 3px; content: ""; position: absolute; bottom: 20px; left: 36px; }
+
+.history-box.box2014 .text:after { background-color: #b69558; }
+
+.history-box.box2013 { margin-top: 53px; }
+.history-box.box2013 .text:after { background-color: #fbcb38; }
+
+.history-box.box2011 .image { margin-top: 45px; }
+
+.history-box.box2010 .text:after { background-color: #4f2b1c; }
+
+.history-box.box2009 .text:after { background-color: #00a9e9; }
+
+.history-box.box2008 { margin-top: 92px; }
+.history-box.box2008 .image { margin-top: 45px; }
+.history-box.box2008 .text .arrow-right { top: 84px; }
+
+.history-box.box2007 { margin-top: -56px; }
+
+.history-box.box-last { height: 361px; background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative; }
+.history-box.box-last .box-year { background: #034988; width: 273px; height: 81px; position: absolute; bottom: 0; left: -273px; }
+.history-box.box-last .box-year h1 { float: right; color: #fff; margin-top: 20px; font-weight: normal; font-size: 22px; margin-right: 38px; }
+.history-box.box-last .box-year h1 span { color: #0099ff; }
+.history-box.box-last .text { width: 100%; background: #034988; color: #fff; height: 100%; width: 576px; padding-top: 28px; }
+.history-box.box-last .text:after { background: #999999; }
+.history-box.box-last .text h2 { font: normal 14px Arial, sans-serif; }
+.history-box.box-last .text h1 { color: #00aeef; }

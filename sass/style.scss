@@ -10,18 +10,21 @@
 			&:hover a {border-bottom: 0}
 		}
 		a {text-transform: uppercase; font-weight: bold; line-height: 30px; display: inline-block; font-size: 14px;}
-		&:hover > a, &.acitve > a {border-bottom: 3px solid $blue;}
+		&:hover,&.acitve {
+			> a {border-bottom: 3px solid $blue;}
+			.sub-menu {display: block}
+		}
 		.sub-menu {padding-left: 5px; padding-top: 5px; display: none; position: absolute; right:16px; top:78px; width: 297px; height: 163px; background: url(../images/sub-menu.png) repeat 0 0; box-shadow:1px 1px 5px 0px rgba(0, 0, 0, 0.15);}
 	}
 }
 
-.sub-menu .sm-item {width: 160px; float: right; clear: both; position: relative;z-index: 1; 
-	> a {padding:0 5px; display: block; line-height: 28px;}
-	.sm-content {position: absolute; left:5px; top:5px; display: none; left:-136px; top:0; z-index: -1;
+.sub-menu .sm-item {width: 160px; float: right; clear: both;
+	> a {padding:0 5px; display: block; line-height: 28px; position: relative; z-index: 1;}
+	.sm-content { display: none; left:5px; position: absolute; z-index: 0; top:5px;
 		p {margin:10px 5px 5px; clear: both;}
 		img {width:126px; height: 106px;}
 	}
-	&.active .sm-content {display: block;}
+	&.active .sm-content,&:hover .sm-content {display: block;}
 	a:hover,&.active a{color:#fff; background: $blue;}
 }
 
@@ -78,6 +81,7 @@
 		}
 	}
 }
+.top-footer {background: #034988; height: 53px;}
 #footer { background: #162b59; height: 187px; @include box-sizing(border-box); padding-top: 14px; color:#cccccc;
 	.inner {
 		.footer-col {width: 158px; border-right:1px solid #666666;padding-left: 37px; float: left; min-height: 131px;
@@ -127,3 +131,48 @@
 	}
 }
 .history .full-inner {margin-bottom: 0}
+.history-box { 
+	.text {padding-top: 80px; height: 370px;
+		h1.history-title {font-size: 22px; font-weight: normal; margin-bottom: 18px;}
+		&:after {display: block; background: $blue; width:89px; height: 3px; content:""; position: absolute; bottom:20px; left: 36px;}
+	}
+}
+.history-box.box2014 { 
+	.text:after {background-color: #b69558;}
+} 
+.history-box.box2013 { margin-top: 53px;
+	.text:after {background-color: #fbcb38;}
+}
+.history-box.box2011 {
+	.image {margin-top: 45px;}
+}
+.history-box.box2010 {
+	.text {
+		
+		&:after {background-color: #4f2b1c;}
+	}
+}
+.history-box.box2009 {
+	.text:after {background-color: $blue1;}
+}
+.history-box.box2008 { margin-top: 92px;
+	.image {margin-top: 45px;}
+	.text {
+		.arrow-right {top:84px;}
+	}
+}
+.history-box.box2007 {
+	margin-top: -56px;
+}
+.history-box.box-last {height: 361px; background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative;
+	.box-year {background: #034988; width:273px; height: 81px;position: absolute; bottom:0; left:-273px;
+		h1 {float: right; color:#fff; margin-top: 20px; font-weight: normal; font-size: 22px; margin-right: 38px;
+			span {color:#0099ff}
+		}
+	}
+	.text { width:100%; background: #034988; color:#fff; height: 100%; width: 576px; padding-top: 28px;
+		&:after {background: #999999; }
+		h2 {font:normal 14px $Arial;}
+		h1 {color:#00aeef;}
+	}
+}
