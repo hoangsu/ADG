@@ -20,6 +20,7 @@ h1 {font-size: 28px;}
 .blue1 {background-color: $blue1;}
 .blue2 {background-color: $blue2;}
 .orange {background-color: $orange;}
+.orange1 {background-color: $orange1;}
 .darkred {background-color: $darkred;}
 .wood {background-color: $wood;}
 .blue-non {height: 31px; line-height: 31px; background-color: #fff; border:2px solid $blue1;color:$blue1; background-image:url(../images/arrow-button-nb.png); }
@@ -49,6 +50,7 @@ h1.title-box.blue2-line:after {background-color: $blue2;}
 h1.title-box.darkred-line:after {background-color: $darkred;}
 h1.title-box.wood-line:after {background-color: $wood;}
 h1.title-box.white-line:after {background-color: #fff;}
+h1.title-box.orange1-line:after {background-color: $orange1;}
 .top-banner {height: 225px;
 	.left-title {height: 100%; @include box-sizing(border-box); padding-top: 60px; padding-left: 82px;
 		h1 { font-size: 28px;}
@@ -80,4 +82,19 @@ h1.title-box.white-line:after {background-color: #fff;}
 			p {line-height: 55px;font-size: 15px; font-weight: bold; }
 		}
 	} 
+}
+.brand-box { position: relative;
+	.text {height: 370px;
+		h1.title-box {font-size: 28px;}
+	}
+	.brand-logo img{display: block; margin-bottom:35px; }
+	.right-box {position: absolute; }
+}
+.know-box {width: 225px; float: left; color:#fff; text-align: center; height: 190px; @include box-sizing(border-box); padding: 43px 20px; position: absolute; bottom:-27px; right:-37px;
+	h3 {font-size: 20px; font-weight: normal; margin-bottom: 20px;}
+	p {font-size: 14px; line-height: 19px;}
+}
+.product-box {
+	.text {height: 370px;}
+	.other {width: 508px;}
 }
