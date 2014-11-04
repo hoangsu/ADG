@@ -186,7 +186,7 @@ h1 {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000328}}
-.clearfix:after, .full-section:after, .full-inner:after, .box:after {
+.clearfix:after, .full-section:after, .full-inner:after, .box:after, .breadcrumb:after, .share:after {
   content: "";
   display: table;
   clear: both;
@@ -463,6 +463,27 @@ h1.title-box.orange1-line:after {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000399}}
 .product-box .other {
   width: 508px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\00003101}}
+.color-line {
+  width: 151px;
+  height: 3px;
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\00003102}}
+.catalog {
+  margin-top: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\00003103}}
+.catalog img {
+  border: 1px solid #bbb;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\00003104}}
+.catalog h3 {
+  margin-bottom: 5px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\000034}}
@@ -1374,4 +1395,134 @@ h1.title-box.orange1-line:after {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003265}}
 .brand .top-footer, .product .top-footer {
   margin-top: 45px;
+}
+
+/* Product Detail 1*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003267}}
+.detail-banner {
+  height: 288px;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003268}}
+.detail-wrapper {
+  width: 1109px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: -64px auto 55px;
+  padding: 28px 53px 29px 111px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003269}}
+.breadcrumb {
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003270}}
+.breadcrumb li {
+  float: left;
+  border-right: 1px solid #333;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003271}}
+.breadcrumb li:last-child {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003274}}
+.content-pr1 .sidebar {
+  min-height: 817px;
+  margin-right: 37px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003276}}
+.content-detail .sidebar {
+  width: 152px;
+  float: left;
+  min-height: 311px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003277}}
+.content-detail .right-content {
+  float: left;
+  width: 756px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003278}}
+.content-detail .right-content .col-left {
+  width: 395px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003279}}
+.content-detail .right-content .col-left > img {
+  position: relative;
+  left: -184px;
+  max-width: 1109px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003281}}
+.content-detail .right-content .col-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 297px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003282}}
+.content-detail .right-content .col-right > img {
+  right: -20px;
+  position: relative;
+  max-width: 1109px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003285}}
+.content-detail h1.title {
+  width: 627px;
+  margin-bottom: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003286}}
+.content-detail h3 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003287}}
+.content-detail h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003288}}
+.content-detail p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003290}}
+.share {
+  float: right;
+  margin-right: 60px;
+  width: 300px;
+  margin-top: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003291}}
+.share .title {
+  font-size: 14px;
+  margin-right: 16px;
+  float: left;
+  line-height: 28px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003292}}
+.share li {
+  float: left;
+  margin-right: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003293}}
+.share li img {
+  width: 28px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003294}}
+.share li:last-child {
+  margin-right: 0;
 }
