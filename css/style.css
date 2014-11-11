@@ -1,1528 +1,372 @@
-@font-face {
-  font-family: 'iris_azo';
-  src: url("../fonts/iris_azo-webfont.eot");
-  src: url("../fonts/iris_azo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iris_azo-webfont.woff2") format("woff2"), url("../fonts/iris_azo-webfont.woff") format("woff"), url("../fonts/iris_azo-webfont.ttf") format("truetype"), url("../fonts/iris_azo-webfont.svg#iris_azo") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'iris_azo';
-  src: url("../fonts/iris_azo_bold-webfont.eot");
-  src: url("../fonts/iris_azo_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iris_azo_bold-webfont.woff2") format("woff2"), url("../fonts/iris_azo_bold-webfont.woff") format("woff"), url("../fonts/iris_azo_bold-webfont.ttf") format("truetype"), url("../fonts/iris_azo_bold-webfont.svg#iris_azo") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\000033}}
-* {
-  margin: 0;
-  padding: 0;
-}
+@font-face { font-family: 'iris_azo'; src: url("../fonts/iris_azo-webfont.eot"); src: url("../fonts/iris_azo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iris_azo-webfont.woff2") format("woff2"), url("../fonts/iris_azo-webfont.woff") format("woff"), url("../fonts/iris_azo-webfont.ttf") format("truetype"), url("../fonts/iris_azo-webfont.svg#iris_azo") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'iris_azo'; src: url("../fonts/iris_azo_bold-webfont.eot"); src: url("../fonts/iris_azo_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iris_azo_bold-webfont.woff2") format("woff2"), url("../fonts/iris_azo_bold-webfont.woff") format("woff"), url("../fonts/iris_azo_bold-webfont.ttf") format("truetype"), url("../fonts/iris_azo_bold-webfont.svg#iris_azo") format("svg"); font-weight: bold; font-style: normal; }
+* { margin: 0; padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\000034}}
-a {
-  color: inherit;
-  text-decoration: none;
-}
+a { color: inherit; text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\000035}}
-img {
-  border: none;
-  max-width: 100%;
-}
+img { border: none; max-width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\000036}}
-li {
-  list-style-type: none;
-}
+li { list-style-type: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\000037}}
-body {
-  font: 12px Arial, sans-serif;
-  color: #333;
-  background: url(../images/bg.png) repeat 0 0;
-}
+body { font: 12px Arial, sans-serif; color: #333; background: url(../images/bg.png) repeat 0 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\000038}}
-h1, h2, h3, h4, h5 {
-  font-family: "iris_azo", Arial, sans-serif;
-}
+h1, h2, h3, h4, h5 { font-family: "iris_azo", Arial, sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\000039}}
-h1 {
-  font-size: 28px;
-}
+h1 { font-size: 28px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000310}}
-.inner {
-  width: 1182px;
-  margin: auto;
-}
+.inner { width: 1182px; margin: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000311}}
-.col50 {
-  width: 48.9%;
-}
+.col50 { width: 48.9%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000311}}
-.col51 {
-  width: 51%;
-}
+.col51 { width: 51%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000311}}
-.col49 {
-  width: 49%;
-}
+.col49 { width: 49%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000312}}
-.full-section, .full-inner {
-  width: 100%;
-}
+.full-section, .full-inner { width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000313}}
-.full-inner {
-  margin-bottom: 27px;
-}
+.full-inner { margin-bottom: 27px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000314}}
-.left {
-  float: left;
-}
+.left { float: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000314}}
-.right {
-  float: right;
-}
+.right { float: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000315}}
-.arrow-left {
-  background: url(../images/arrow-l.png) no-repeat 0 0;
-  width: 19px;
-  height: 38px;
-  position: absolute;
-  top: 35px;
-  left: -19px;
-}
+.arrow-left { background: url(../images/arrow-l.png) no-repeat 0 0; width: 19px; height: 38px; position: absolute; top: 35px; left: -19px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000316}}
-.arrow-right {
-  background: url(../images/arrow-r.png) no-repeat 0 0;
-  width: 19px;
-  height: 38px;
-  position: absolute;
-  top: 35px;
-  right: -19px;
-}
+.arrow-right { background: url(../images/arrow-r.png) no-repeat 0 0; width: 19px; height: 38px; position: absolute; top: 35px; right: -19px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000317}}
-.arrow-top {
-  background: url(../images/arrow-top.png) no-repeat 0 0;
-  width: 19px;
-  height: 9px;
-  position: absolute;
-  top: -9px;
-  right: 33px;
-}
+.arrow-top { background: url(../images/arrow-top.png) no-repeat 0 0; width: 19px; height: 9px; position: absolute; top: -9px; right: 33px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000318}}
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 0 33px 0 25px;
-  background: url(../images/arrow-button.png) no-repeat 86px center;
-  line-height: 33px;
-  height: 33px;
-  text-transform: uppercase;
-  color: #fff;
-}
+.button { display: inline-block; border-radius: 4px; padding: 0 33px 0 25px; background: url(../images/arrow-button.png) no-repeat 86px center; line-height: 33px; height: 33px; text-transform: uppercase; color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000319}}
-.blue {
-  background-color: #005bac;
-}
+.blue { background-color: #005bac; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000320}}
-.blue1 {
-  background-color: #00a9e9;
-}
+.blue1 { background-color: #00a9e9; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000321}}
-.blue2 {
-  background-color: #00a8a9;
-}
+.blue2 { background-color: #00a8a9; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000322}}
-.orange {
-  background-color: #ff6634;
-}
+.orange { background-color: #ff6634; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000323}}
-.orange1 {
-  background-color: #fdb913;
-}
+.orange1 { background-color: #fdb913; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000324}}
-.darkred {
-  background-color: #c4302c;
-}
+.darkred { background-color: #c4302c; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000325}}
-.wood {
-  background-color: #b69558;
-}
+.wood { background-color: #b69558; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000326}}
-.blue-non {
-  height: 31px;
-  line-height: 31px;
-  background-color: #fff;
-  border: 2px solid #00a9e9;
-  color: #00a9e9;
-  background-image: url(../images/arrow-button-nb.png);
-}
+.blue-non { height: 31px; line-height: 31px; background-color: #fff; border: 2px solid #00a9e9; color: #00a9e9; background-image: url(../images/arrow-button-nb.png); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000327}}
-.clear {
-  clear: both;
-}
+.clear { clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000328}}
-.clearfix:after, .full-section:after, .full-inner:after, .box:after, .breadcrumb:after, .share:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.clearfix:after, .full-section:after, .full-inner:after, .box:after, .breadcrumb:after, .share:after { content: ""; display: table; clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000331}}
-.box .text {
-  background: #fff;
-  float: left;
-  position: relative;
-  padding: 28px 30px 59px 36px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  height: 324px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000332}}
-.box .text p {
-  font-size: 14px;
-  line-height: 19px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000333}}
-.box .text p.source {
-  margin-top: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000334}}
-.box .text .other {
-  position: absolute;
-  bottom: 27px;
-  left: 38px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000335}}
-.box .text .other .more-link {
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #666666;
-  text-decoration: none;
-  font-family: "iris_azo", Arial, sans-serif;
-  margin-left: 9px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000338}}
-.box .image {
-  float: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000339}}
-.box .image img {
-  height: 324px;
-}
+.box .text { background: #fff; float: left; position: relative; padding: 28px 30px 59px 36px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; height: 324px; }
+.box .text p { font-size: 14px; line-height: 19px; }
+.box .text p.source { margin-top: 20px; }
+.box .text .other { position: absolute; bottom: 27px; left: 38px; }
+.box .text .other .more-link { font-size: 13px; text-transform: uppercase; color: #666666; text-decoration: none; font-family: "iris_azo", Arial, sans-serif; margin-left: 9px; }
+.box .image { float: left; }
+.box .image img { height: 324px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000343}}
-h1.title-box {
-  margin-bottom: 18px;
-  font-size: 22px;
-  line-height: 30px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000344}}
-h1.title-box:after {
-  height: 3px;
-  width: 72px;
-  content: "";
-  display: block;
-  margin-top: 13px;
-}
+h1.title-box { margin-bottom: 18px; font-size: 22px; line-height: 30px; }
+h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; margin-top: 13px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000346}}
-h1.title-box.orange-line:after {
-  background-color: #ff6634;
-}
+h1.title-box.orange-line:after { background-color: #ff6634; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000347}}
-h1.title-box.blue-line:after {
-  background-color: #005bac;
-}
+h1.title-box.blue-line:after { background-color: #005bac; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000348}}
-h1.title-box.blue1-line:after {
-  background-color: #00a9e9;
-}
+h1.title-box.blue1-line:after { background-color: #00a9e9; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000349}}
-h1.title-box.blue2-line:after {
-  background-color: #00a8a9;
-}
+h1.title-box.blue2-line:after { background-color: #00a8a9; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000350}}
-h1.title-box.darkred-line:after {
-  background-color: #c4302c;
-}
+h1.title-box.darkred-line:after { background-color: #c4302c; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000351}}
-h1.title-box.wood-line:after {
-  background-color: #b69558;
-}
+h1.title-box.wood-line:after { background-color: #b69558; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000352}}
-h1.title-box.white-line:after {
-  background-color: #fff;
-}
+h1.title-box.white-line:after { background-color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000353}}
-h1.title-box.orange1-line:after {
-  background-color: #fdb913;
-}
+h1.title-box.orange1-line:after { background-color: #fdb913; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000354}}
-.top-banner {
-  height: 225px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000355}}
-.top-banner .left-title {
-  height: 100%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  padding-top: 60px;
-  padding-left: 82px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000356}}
-.top-banner .left-title h1 {
-  font-size: 28px;
-}
+.top-banner { height: 225px; }
+.top-banner .left-title { height: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding-top: 60px; padding-left: 82px; }
+.top-banner .left-title h1 { font-size: 28px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000359}}
-.border-bottom5, .group-page #header .inner {
-  border-bottom: 5px solid #929292;
-}
+.border-bottom5, .group-page #header .inner { border-bottom: 5px solid #929292; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000360}}
-.year-label {
-  text-align: center;
-  background: url(../images/year-label.png) no-repeat 0 0;
-  width: 90px;
-  height: 55px;
-  position: absolute;
-  top: 0;
-  left: 36px;
-  color: #fff;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000361}}
-.year-label h1 {
-  font-size: 22px;
-  font-weight: normal;
-  line-height: 40px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000362}}
-.year-label h1 span {
-  color: #0099ff;
-}
+.year-label { text-align: center; background: url(../images/year-label.png) no-repeat 0 0; width: 90px; height: 55px; position: absolute; top: 0; left: 36px; color: #fff; }
+.year-label h1 { font-size: 22px; font-weight: normal; line-height: 40px; }
+.year-label h1 span { color: #0099ff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000366}}
-.box-video .video {
-  position: relative;
-  z-index: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000367}}
-.box-video .video video {
-  max-width: 100%;
-  max-height: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000368}}
-.box-video .video .overlay {
-  position: absolute;
-  background: url(../images/video-overlay.png) repeat 0 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000369}}
-.box-video .video .overlay button {
-  outline: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border: none;
-  text-indent: -99999px;
-  background: url(../images/video-icon.png) 0 0;
-  margin-top: -20px;
-  margin-left: -20px;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000370}}
-.box-video .video .overlay button.pause {
-  background-position: 0 bottom;
-}
+.box-video .video { position: relative; z-index: 1; }
+.box-video .video video { max-width: 100%; max-height: 100%; }
+.box-video .video .overlay { position: absolute; background: url(../images/video-overlay.png) repeat 0 0; width: 100%; height: 100%; text-align: center; }
+.box-video .video .overlay button { outline: none; position: absolute; top: 50%; left: 50%; border: none; text-indent: -99999px; background: url(../images/video-icon.png) 0 0; margin-top: -20px; margin-left: -20px; width: 40px; height: 40px; display: inline-block; vertical-align: middle; cursor: pointer; }
+.box-video .video .overlay button.pause { background-position: 0 bottom; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000376}}
-.history-box.box-video .video {
-  width: 437px;
-  float: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000377}}
-.history-box.box-video .text {
-  margin-top: -103px;
-  width: 100%;
-  clear: both;
-  padding-top: 140px;
-  height: 299px;
-}
+.history-box.box-video .video { width: 437px; float: right; }
+.history-box.box-video .text { margin-top: -103px; width: 100%; clear: both; padding-top: 140px; height: 299px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000380}}
-.group-box .text {
-  padding-top: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000381}}
-.group-box .text .date {
-  border-bottom: 1px solid #999;
-  height: 45px;
-  margin-bottom: 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000382}}
-.group-box .text .date p {
-  line-height: 55px;
-  font-size: 15px;
-  font-weight: bold;
-}
+.group-box .text { padding-top: 0; }
+.group-box .text .date { border-bottom: 1px solid #999; height: 45px; margin-bottom: 15px; }
+.group-box .text .date p { line-height: 55px; font-size: 15px; font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000386}}
-.brand-box {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000387}}
-.brand-box .text {
-  height: 370px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000388}}
-.brand-box .text h1.title-box {
-  font-size: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000390}}
-.brand-box .brand-logo img {
-  display: block;
-  margin-bottom: 35px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000391}}
-.brand-box .right-box {
-  position: absolute;
-}
+.brand-box { position: relative; }
+.brand-box .text { height: 370px; }
+.brand-box .text h1.title-box { font-size: 28px; }
+.brand-box .brand-logo img { display: block; margin-bottom: 35px; }
+.brand-box .right-box { position: absolute; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000393}}
-.know-box {
-  width: 225px;
-  float: left;
-  color: #fff;
-  text-align: center;
-  height: 190px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  padding: 43px 20px;
-  position: absolute;
-  bottom: -27px;
-  right: -37px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000394}}
-.know-box h3 {
-  font-size: 20px;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000395}}
-.know-box p {
-  font-size: 14px;
-  line-height: 19px;
-}
+.know-box { width: 225px; float: left; color: #fff; text-align: center; height: 190px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 43px 20px; position: absolute; bottom: -27px; right: -37px; }
+.know-box h3 { font-size: 20px; font-weight: normal; margin-bottom: 20px; }
+.know-box p { font-size: 14px; line-height: 19px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000398}}
-.product-box .text {
-  height: 370px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\0000399}}
-.product-box .other {
-  width: 508px;
-}
+.product-box .text { height: 370px; }
+.product-box .other { width: 508px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\00003101}}
-.color-line {
-  width: 151px;
-  height: 3px;
-  vertical-align: top;
-}
+.color-line { width: 151px; height: 3px; vertical-align: top; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\00003102}}
-.catalog {
-  margin-top: 60px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\00003103}}
-.catalog img {
-  border: 1px solid #bbb;
-  margin-bottom: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/modules\.scss}line{font-family:\00003104}}
-.catalog h3 {
-  margin-bottom: 5px;
-}
+.catalog { margin-top: 60px; }
+.catalog img { border: 1px solid #bbb; margin-bottom: 20px; }
+.catalog h3 { margin-bottom: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\000034}}
-#header {
-  background: #fff;
-  height: 68px;
-  padding-top: 49px;
-}
+#header { background: #fff; height: 68px; padding-top: 49px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\000035}}
-#header .logo {
-  display: inline-block;
-  padding-left: 37px;
-}
+#header .logo { display: inline-block; padding-left: 37px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\000036}}
-.menu {
-  float: right;
-  padding-right: 35px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\000037}}
-.menu ul li {
-  float: left;
-  position: relative;
-  padding: 12px 15px 36px;
-  z-index: 3;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\000038}}
-.menu ul li.menu-icon {
-  line-height: 30px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\000039}}
-.menu ul li.menu-icon img {
-  vertical-align: middle;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000310}}
-.menu ul li.menu-icon:hover a {
-  border-bottom: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000312}}
-.menu ul li a {
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 30px;
-  display: inline-block;
-  font-size: 14px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000313}}
-.menu ul li > a {
-  border-bottom: 3px solid #fff;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000315}}
-.menu ul li:hover > a, .menu ul li.acitve > a {
-  border-bottom: 3px solid #005bac;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000316}}
-.menu ul li:hover .sub-menu, .menu ul li.acitve .sub-menu {
-  display: block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000318}}
-.menu ul li.brand-menu:hover > a {
-  border-bottom: 3px solid #c4302c;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000319}}
-.menu ul li.new-menu:hover > a {
-  border-bottom: 3px solid #ff6634;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000320}}
-.menu ul li .sub-menu {
-  padding-left: 5px;
-  padding-top: 5px;
-  display: none;
-  position: absolute;
-  right: 16px;
-  top: 78px;
-  width: 297px;
-  height: 163px;
-  background: url(../images/sub-menu.png) repeat 0 0;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
-}
+.menu { float: right; padding-right: 35px; }
+.menu ul li { float: left; position: relative; padding: 12px 15px 36px; z-index: 3; }
+.menu ul li.menu-icon { line-height: 30px; }
+.menu ul li.menu-icon img { vertical-align: middle; }
+.menu ul li.menu-icon:hover a { border-bottom: 0; }
+.menu ul li a { text-transform: uppercase; font-weight: bold; line-height: 30px; display: inline-block; font-size: 14px; }
+.menu ul li > a { border-bottom: 3px solid #fff; }
+.menu ul li:hover > a, .menu ul li.acitve > a { border-bottom: 3px solid #005bac; }
+.menu ul li:hover .sub-menu, .menu ul li.acitve .sub-menu { display: block; }
+.menu ul li.brand-menu:hover > a { border-bottom: 3px solid #c4302c; }
+.menu ul li.new-menu:hover > a { border-bottom: 3px solid #ff6634; }
+.menu ul li .sub-menu { padding-left: 5px; padding-top: 5px; display: none; position: absolute; right: 16px; top: 78px; width: 297px; height: 163px; background: url(../images/sub-menu.png) repeat 0 0; box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000324}}
-.sub-menu .sm-item {
-  width: 160px;
-  float: right;
-  clear: both;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000325}}
-.sub-menu .sm-item > a {
-  padding: 0 5px;
-  display: block;
-  line-height: 28px;
-  position: relative;
-  z-index: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000326}}
-.sub-menu .sm-item .sm-content {
-  display: none;
-  left: 5px;
-  position: absolute;
-  z-index: 0;
-  top: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000327}}
-.sub-menu .sm-item .sm-content p {
-  margin: 10px 5px 5px;
-  clear: both;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000328}}
-.sub-menu .sm-item .sm-content img {
-  width: 126px;
-  height: 106px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000330}}
-.sub-menu .sm-item.active .sm-content, .sub-menu .sm-item:hover .sm-content {
-  display: block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000331}}
-.sub-menu .sm-item a:hover, .sub-menu .sm-item.active a {
-  color: #fff;
-  background: #005bac;
-}
+.sub-menu .sm-item { width: 160px; float: right; clear: both; }
+.sub-menu .sm-item > a { padding: 0 5px; display: block; line-height: 28px; position: relative; z-index: 1; }
+.sub-menu .sm-item .sm-content { display: none; left: 5px; position: absolute; z-index: 0; top: 5px; }
+.sub-menu .sm-item .sm-content p { margin: 10px 5px 5px; clear: both; }
+.sub-menu .sm-item .sm-content img { width: 126px; height: 106px; }
+.sub-menu .sm-item.active .sm-content, .sub-menu .sm-item:hover .sm-content { display: block; }
+.sub-menu .sm-item a:hover, .sub-menu .sm-item.active a { color: #fff; background: #005bac; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000334}}
-.brand-menu .sub-menu .sm-item a:hover, .brand-menu .sub-menu .sm-item.active a {
-  background: #c4302c;
-}
+.brand-menu .sub-menu .sm-item a:hover, .brand-menu .sub-menu .sm-item.active a { background: #c4302c; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000337}}
-.new-menu .sub-menu .sm-item a:hover, .new-menu .sub-menu .sm-item.active a {
-  background: #ff6634;
-}
+.new-menu .sub-menu .sm-item a:hover, .new-menu .sub-menu .sm-item.active a { background: #ff6634; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000339}}
-.flexslider .slides li {
-  background-color: #000;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000340}}
-.flexslider .slides li > a {
-  float: right;
-  width: 68.7%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000341}}
-.flexslider .slides li .flex-caption {
-  background: #000;
-  height: 100%;
-  padding: 59px 32px 10px 81px;
-  float: left;
-  width: 31.3%;
-  color: #fff;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000342}}
-.flexslider .slides li .flex-caption h1 {
-  margin-bottom: 16px;
-  line-height: 34px;
-  font-size: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000343}}
-.flexslider .slides li .flex-caption p {
-  line-height: 16px;
-  margin-bottom: 75px;
-  font-size: 14px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000344}}
-.flexslider .slides li .flex-caption img {
-  width: auto;
-}
+.flexslider .slides li { background-color: #000; }
+.flexslider .slides li > a { float: right; width: 68.7%; }
+.flexslider .slides li .flex-caption { background: #000; height: 100%; padding: 59px 32px 10px 81px; float: left; width: 31.3%; color: #fff; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.flexslider .slides li .flex-caption h1 { margin-bottom: 16px; line-height: 34px; font-size: 28px; }
+.flexslider .slides li .flex-caption p { line-height: 16px; margin-bottom: 75px; font-size: 14px; }
+.flexslider .slides li .flex-caption img { width: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000347}}
-.note {
-  background: #fff;
-  height: 162px;
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000348}}
-.note .inner {
-  border-bottom: 5px solid #929292;
-  height: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000349}}
-.note .note-content {
-  width: 634px;
-  margin: 0 auto;
-  padding-top: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000350}}
-.note .note-content p {
-  font-weight: bold;
-  font-size: 16px;
-  padding-left: 51px;
-  padding-top: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000351}}
-.note .note-content img {
-  float: left;
-  padding-top: 16px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000352}}
-.note .note-content h1 {
-  padding-top: 23px;
-  text-align: left;
-  padding-left: 80px;
-  font-style: italic;
-  color: #9c1921;
-  font-size: 22px;
-  font-family: "Palatino Linotype", arial, sans-serif;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000353}}
-.note .note-content a.readmore {
-  float: right;
-  margin-right: 39px;
-  margin-top: 6px;
-  font-size: 13px;
-}
+.note { background: #fff; height: 162px; text-align: center; }
+.note .inner { border-bottom: 5px solid #929292; height: 100%; }
+.note .note-content { width: 634px; margin: 0 auto; padding-top: 28px; }
+.note .note-content p { font-weight: bold; font-size: 16px; padding-left: 51px; padding-top: 10px; }
+.note .note-content img { float: left; padding-top: 16px; }
+.note .note-content h1 { padding-top: 23px; text-align: left; padding-left: 80px; font-style: italic; color: #9c1921; font-size: 22px; font-family: "Palatino Linotype", arial, sans-serif; }
+.note .note-content a.readmore { float: right; margin-right: 39px; margin-top: 6px; font-size: 13px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000356}}
-.box.home-full {
-  margin-top: 63px;
-  margin-bottom: 27px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000357}}
-.box.home-full .text {
-  width: 24.9%;
-  height: 522px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000358}}
-.box.home-full .text .arrow-right {
-  top: 60px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000359}}
-.box.home-full .text h1.title-box {
-  line-height: 38px;
-  font-size: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000361}}
-.box.home-full > .image {
-  width: 52.7%;
-  float: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000362}}
-.box.home-full > .image img {
-  height: 522px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000364}}
-.box.home-full .right-box {
-  width: 22.4%;
-  float: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000365}}
-.box.home-full .right-box .orange {
-  width: 85.6%;
-  float: left;
-  color: #fff;
-  text-align: center;
-  height: 190px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  padding: 43px 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000366}}
-.box.home-full .right-box .orange h3 {
-  font-size: 20px;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000367}}
-.box.home-full .right-box .orange p {
-  font-size: 14px;
-  line-height: 19px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000369}}
-.box.home-full .right-box .image {
-  float: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000370}}
-.box.home-full .right-box .image img {
-  height: 262px;
-}
+.box.home-full { margin-top: 63px; margin-bottom: 27px; }
+.box.home-full .text { width: 24.9%; height: 522px; }
+.box.home-full .text .arrow-right { top: 60px; }
+.box.home-full .text h1.title-box { line-height: 38px; font-size: 28px; }
+.box.home-full > .image { width: 52.7%; float: left; }
+.box.home-full > .image img { height: 522px; }
+.box.home-full .right-box { width: 22.4%; float: right; }
+.box.home-full .right-box .orange { width: 85.6%; float: left; color: #fff; text-align: center; height: 190px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 43px 20px; }
+.box.home-full .right-box .orange h3 { font-size: 20px; font-weight: normal; margin-bottom: 20px; }
+.box.home-full .right-box .orange p { font-size: 14px; line-height: 19px; }
+.box.home-full .right-box .image { float: left; }
+.box.home-full .right-box .image img { height: 262px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000374}}
-.join-text {
-  margin-bottom: 9px;
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000375}}
-.join-text h1 {
-  line-height: 54px;
-}
+.join-text { margin-bottom: 9px; text-align: center; }
+.join-text h1 { line-height: 54px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000377}}
-.social {
-  background: #034988;
-  height: 180px;
-  color: #fff;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000378}}
-.social .inner {
-  background: url(../images/map.png) no-repeat 117px 0;
-  padding-top: 36px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  height: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000379}}
-.social .inner .col25 {
-  font-size: 14px;
-  float: left;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  width: 216px;
-  margin-left: 34px;
-  margin-right: 42px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000380}}
-.social .inner .col25 .icon {
-  font: bold 18px "iris_azo", Arial, sans-serif;
-  background: url(../images/social.png) no-repeat 0 0;
-  display: block;
-  padding-left: 50px;
-  height: 40px;
-  line-height: 34px;
-  margin-bottom: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000381}}
-.social .inner .col25 .icon.fb-icon {
-  background-position: 0 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000382}}
-.social .inner .col25 .icon.tw-icon {
-  background-position: 0 -78px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000383}}
-.social .inner .col25 .icon.plus-icon {
-  background-position: 0 -153px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000384}}
-.social .inner .col25 .icon.yu-icon {
-  background-position: 0 -228px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000386}}
-.social .inner .col25 p {
-  line-height: 19px;
-  padding-left: 3px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000387}}
-.social .inner .col25 a.link {
-  color: #00aeef;
-  display: block;
-  padding-left: 3px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000388}}
-.social .inner .col25:last-child {
-  margin-right: 0;
-}
+.social { background: #034988; height: 180px; color: #fff; }
+.social .inner { background: url(../images/map.png) no-repeat 117px 0; padding-top: 36px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; height: 100%; }
+.social .inner .col25 { font-size: 14px; float: left; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; width: 216px; margin-left: 34px; margin-right: 42px; }
+.social .inner .col25 .icon { font: bold 18px "iris_azo", Arial, sans-serif; background: url(../images/social.png) no-repeat 0 0; display: block; padding-left: 50px; height: 40px; line-height: 34px; margin-bottom: 5px; }
+.social .inner .col25 .icon.fb-icon { background-position: 0 0; }
+.social .inner .col25 .icon.tw-icon { background-position: 0 -78px; }
+.social .inner .col25 .icon.plus-icon { background-position: 0 -153px; }
+.social .inner .col25 .icon.yu-icon { background-position: 0 -228px; }
+.social .inner .col25 p { line-height: 19px; padding-left: 3px; }
+.social .inner .col25 a.link { color: #00aeef; display: block; padding-left: 3px; }
+.social .inner .col25:last-child { margin-right: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000392}}
-.top-footer {
-  background: #034988;
-  height: 53px;
-}
+.top-footer { background: #034988; height: 53px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000393}}
-#footer {
-  background: #162b59;
-  height: 187px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  padding-top: 14px;
-  color: #cccccc;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000395}}
-#footer .inner .footer-col {
-  width: 158px;
-  border-right: 1px solid #666666;
-  padding-left: 37px;
-  float: left;
-  min-height: 131px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000396}}
-#footer .inner .footer-col h3.title {
-  color: #33ccff;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: Arial, sans-serif;
-  margin-top: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\0000397}}
-#footer .inner .footer-col ul li {
-  font-size: 14px;
-  line-height: 22px;
-}
+#footer { background: #162b59; height: 187px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding-top: 14px; color: #cccccc; }
+#footer .inner .footer-col { width: 158px; border-right: 1px solid #666666; padding-left: 37px; float: left; min-height: 131px; }
+#footer .inner .footer-col h3.title { color: #33ccff; font-size: 16px; line-height: 22px; font-family: Arial, sans-serif; margin-top: 10px; }
+#footer .inner .footer-col ul li { font-size: 14px; line-height: 22px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003101}}
-.search-footer {
-  float: left;
-  padding-left: 40px;
-  padding-top: 23px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003102}}
-.search-footer input {
-  border-radius: 4px;
-  height: 33px;
-  line-height: 33px\9;
-  padding-left: 10px;
-  padding-right: 7px;
-  width: 200px;
-  float: left;
-  border: none;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003103}}
-.search-footer .search-button {
-  height: 33px;
-  line-height: 33px;
-  background: url(../images/search-button.png) no-repeat center center black;
-  border: none;
-  text-indent: -99999px;
-  width: 50px;
-  border-radius: 4px;
-  margin-left: -5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003104}}
-.search-footer p.copyright {
-  display: block;
-  margin-top: 23px;
-  font-size: 13px;
-  float: left;
-}
+.search-footer { float: left; padding-left: 40px; padding-top: 23px; }
+.search-footer input { border-radius: 4px; height: 33px; line-height: 33px\9; padding-left: 10px; padding-right: 7px; width: 200px; float: left; border: none; position: relative; }
+.search-footer .search-button { height: 33px; line-height: 33px; background: url(../images/search-button.png) no-repeat center center black; border: none; text-indent: -99999px; width: 50px; border-radius: 4px; margin-left: -5px; }
+.search-footer p.copyright { display: block; margin-top: 23px; font-size: 13px; float: left; }
 
 /* Overview page */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003107}}
-.overview .full-inner {
-  margin-bottom: 34px;
-}
+.overview .full-inner { margin-bottom: 34px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003108}}
-.overview-banner {
-  background: url(../images/o-banner.jpg) no-repeat 0 0;
-  margin-bottom: 58px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003109}}
-.overview-banner .left-title {
-  background: url(../images/bg-black.png) 0 0 repeat;
-  width: 369px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003110}}
-.overview-banner .left-title h1 {
-  color: #fff;
-}
+.overview-banner { background: url(../images/o-banner.jpg) no-repeat 0 0; margin-bottom: 58px; }
+.overview-banner .left-title { background: url(../images/bg-black.png) 0 0 repeat; width: 369px; }
+.overview-banner .left-title h1 { color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003114}}
-.overview-full .text {
-  width: 541px;
-  height: 370px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003115}}
-.overview-full .image {
-  width: 641px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003116}}
-.overview-full .image img {
-  height: 424px;
-}
+.overview-full .text { width: 541px; height: 370px; }
+.overview-full .image { width: 641px; }
+.overview-full .image img { height: 424px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003119}}
-.overview1046 {
-  width: 1046px;
-  margin-left: 37px;
-  margin-bottom: 11px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003120}}
-.overview1046 .image {
-  width: 540px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003121}}
-.overview1046 .image img {
-  height: 423px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003123}}
-.overview1046 .text {
-  width: 506px;
-  height: 423px;
-}
+.overview1046 { width: 1046px; margin-left: 37px; margin-bottom: 11px; }
+.overview1046 .image { width: 540px; }
+.overview1046 .image img { height: 423px; }
+.overview1046 .text { width: 506px; height: 423px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003125}}
-.overview996 {
-  width: 996px;
-  margin-left: 148px;
-  margin-bottom: 9px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003126}}
-.overview996 .image {
-  width: 568px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003127}}
-.overview996 .image img {
-  height: 324px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003129}}
-.overview996 .text {
-  width: 428px;
-  height: 370px;
-}
+.overview996 { width: 996px; margin-left: 148px; margin-bottom: 9px; }
+.overview996 .image { width: 568px; }
+.overview996 .image img { height: 324px; }
+.overview996 .text { width: 428px; height: 370px; }
 
 /* History page */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003132}}
-.history-banner {
-  background-image: url(../images/h-banner.jpg);
-  margin-bottom: 0;
-}
+.history-banner { background-image: url(../images/h-banner.jpg); margin-bottom: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003133}}
-.history-note {
-  background: #fff;
-  height: 225px;
-  margin-bottom: 64px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003134}}
-.history-note .inner {
-  height: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003135}}
-.history-note .inner .text {
-  width: 886px;
-  margin: auto;
-  text-align: justify;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003136}}
-.history-note .inner .text h1 {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003137}}
-.history-note .inner .text p {
-  font-size: 14px;
-  line-height: 19px;
-}
+.history-note { background: #fff; height: 225px; margin-bottom: 64px; }
+.history-note .inner { height: 100%; }
+.history-note .inner .text { width: 886px; margin: auto; text-align: justify; }
+.history-note .inner .text h1 { padding-top: 30px; padding-bottom: 20px; }
+.history-note .inner .text p { font-size: 14px; line-height: 19px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003141}}
-.history .full-inner {
-  margin-bottom: 0;
-}
+.history .full-inner { margin-bottom: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003143}}
-.history-box .text {
-  padding-top: 80px;
-  height: 370px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003144}}
-.history-box .text h1.history-title {
-  font-size: 22px;
-  font-weight: normal;
-  margin-bottom: 18px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003145}}
-.history-box .text:after {
-  display: block;
-  background: #005bac;
-  width: 89px;
-  height: 3px;
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  left: 36px;
-}
+.history-box .text { padding-top: 80px; height: 370px; }
+.history-box .text h1.history-title { font-size: 22px; font-weight: normal; margin-bottom: 18px; }
+.history-box .text:after { display: block; background: #005bac; width: 89px; height: 3px; content: ""; position: absolute; bottom: 20px; left: 36px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003149}}
-.history-box.box2014 .text:after {
-  background-color: #b69558;
-}
+.history-box.box2014 .text:after { background-color: #b69558; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003151}}
-.history-box.box2013 {
-  margin-top: 53px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003152}}
-.history-box.box2013 .text:after {
-  background-color: #fbcb38;
-}
+.history-box.box2013 { margin-top: 53px; }
+.history-box.box2013 .text:after { background-color: #fbcb38; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003155}}
-.history-box.box2011 .image {
-  margin-top: 45px;
-}
+.history-box.box2011 .image { margin-top: 45px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003159}}
-.history-box.box2010 .text:after {
-  background-color: #4f2b1c;
-}
+.history-box.box2010 .text:after { background-color: #4f2b1c; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003163}}
-.history-box.box2009 .text:after {
-  background-color: #00a9e9;
-}
+.history-box.box2009 .text:after { background-color: #00a9e9; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003165}}
-.history-box.box2008 {
-  margin-top: 92px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003166}}
-.history-box.box2008 .image {
-  margin-top: 45px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003168}}
-.history-box.box2008 .text .arrow-right {
-  top: 84px;
-}
+.history-box.box2008 { margin-top: 92px; }
+.history-box.box2008 .image { margin-top: 45px; }
+.history-box.box2008 .text .arrow-right { top: 84px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003171}}
-.history-box.box2007 {
-  margin-top: -56px;
-}
+.history-box.box2007 { margin-top: -56px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003174}}
-.history-box.box-last {
-  height: 361px;
-  background: #034988;
-  margin-top: 131px;
-  margin-bottom: 40px;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003175}}
-.history-box.box-last .box-year {
-  background: #034988;
-  width: 273px;
-  height: 81px;
-  position: absolute;
-  bottom: 0;
-  left: -273px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003176}}
-.history-box.box-last .box-year h1 {
-  float: right;
-  color: #fff;
-  margin-top: 20px;
-  font-weight: normal;
-  font-size: 22px;
-  margin-right: 38px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003177}}
-.history-box.box-last .box-year h1 span {
-  color: #0099ff;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003180}}
-.history-box.box-last .text {
-  width: 100%;
-  background: #034988;
-  color: #fff;
-  height: 100%;
-  width: 576px;
-  padding-top: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003181}}
-.history-box.box-last .text:after {
-  background: #999999;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003182}}
-.history-box.box-last .text h2 {
-  font: normal 14px Arial, sans-serif;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003183}}
-.history-box.box-last .text h1 {
-  color: #00aeef;
-}
+.history-box.box-last { height: 361px; background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative; }
+.history-box.box-last .box-year { background: #034988; width: 273px; height: 81px; position: absolute; bottom: 0; left: -273px; }
+.history-box.box-last .box-year h1 { float: right; color: #fff; margin-top: 20px; font-weight: normal; font-size: 22px; margin-right: 38px; }
+.history-box.box-last .box-year h1 span { color: #0099ff; }
+.history-box.box-last .text { width: 100%; background: #034988; color: #fff; height: 100%; width: 576px; padding-top: 28px; }
+.history-box.box-last .text:after { background: #999999; }
+.history-box.box-last .text h2 { font: normal 14px Arial, sans-serif; }
+.history-box.box-last .text h1 { color: #00aeef; }
 
 /* News page */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003187}}
-.group-page #header .inner {
-  height: 100%;
-}
+.group-page #header .inner { height: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003188}}
-.group-news {
-  margin-top: 65px;
-}
+.group-news { margin-top: 65px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003189}}
-.group-full {
-  width: 1144px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003190}}
-.group-full .text {
-  width: 503px;
-  height: 387px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003191}}
-.group-full .text h1 {
-  font-size: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003192}}
-.group-full .text .date {
-  width: 260px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003195}}
-.group-full .image img {
-  width: 641px;
-  height: 387px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003197}}
-.group-full.box-video {
-  float: right;
-  background: #fff;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003198}}
-.group-full.box-video .video {
-  float: left;
-  max-width: 606px;
-  margin-top: 31px;
-  height: 325px;
-}
+.group-full { width: 1144px; }
+.group-full .text { width: 503px; height: 387px; }
+.group-full .text h1 { font-size: 28px; }
+.group-full .text .date { width: 260px; }
+.group-full .image img { width: 641px; height: 387px; }
+.group-full.box-video { float: right; background: #fff; }
+.group-full.box-video .video { float: left; max-width: 606px; margin-top: 31px; height: 325px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003201}}
-.group-full.first {
-  float: right;
-}
+.group-full.first { float: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003202}}
-.group-news .top-footer {
-  margin-top: 50px;
-}
+.group-news .top-footer { margin-top: 50px; }
 
 /* Brands pages */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003204}}
-.brand-banner {
-  background: url(../images/brand-banner.jpg) no-repeat right 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003205}}
-.brand-banner .left-title {
-  background: #000;
-  width: 236px;
-  color: #fff;
-}
+.brand-banner { background: url(../images/brand-banner.jpg) no-repeat right 0; }
+.brand-banner .left-title { background: #000; width: 236px; color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003207}}
-.brand-box1 {
-  width: 1108px;
-  margin: auto;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003208}}
-.brand-box1 .image {
-  width: 540px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003209}}
-.brand-box1 .image img {
-  height: 424px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003211}}
-.brand-box1 .text {
-  width: 567px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003212}}
-.brand-box1 .know-box {
-  bottom: -27px;
-  right: -37px;
-}
+.brand-box1 { width: 1108px; margin: auto; }
+.brand-box1 .image { width: 540px; }
+.brand-box1 .image img { height: 424px; }
+.brand-box1 .text { width: 567px; }
+.brand-box1 .know-box { bottom: -27px; right: -37px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003214}}
-.brand-box2 {
-  margin-left: 92px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003215}}
-.brand-box2 .image {
-  width: 567px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003216}}
-.brand-box2 .image img {
-  height: 333px;
-  margin-top: 37px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003218}}
-.brand-box2 .text {
-  width: 484px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003219}}
-.brand-box2 .know-box {
-  top: 0;
-  left: 484px;
-}
+.brand-box2 { margin-left: 92px; }
+.brand-box2 .image { width: 567px; }
+.brand-box2 .image img { height: 333px; margin-top: 37px; }
+.brand-box2 .text { width: 484px; }
+.brand-box2 .know-box { top: 0; left: 484px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003221}}
-.brand-box3 {
-  margin-left: 92px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003222}}
-.brand-box3 .image {
-  width: 451px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003223}}
-.brand-box3 .image img {
-  height: 404px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003225}}
-.brand-box3 .text {
-  width: 457px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003226}}
-.brand-box3 .know-box {
-  top: 0;
-  right: 0px;
-}
+.brand-box3 { margin-left: 92px; }
+.brand-box3 .image { width: 451px; }
+.brand-box3 .image img { height: 404px; }
+.brand-box3 .text { width: 457px; }
+.brand-box3 .know-box { top: 0; right: 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003228}}
-.brand-box4 {
-  float: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003229}}
-.brand-box4 .image {
-  width: 525px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003230}}
-.brand-box4 .image img {
-  height: 370px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003232}}
-.brand-box4 .brand-logo {
-  text-align: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003233}}
-.brand-box4 .text {
-  width: 430px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003234}}
-.brand-box4 .know-box {
-  top: 0;
-  left: -225px;
-  background-color: #231f20;
-}
+.brand-box4 { float: right; }
+.brand-box4 .image { width: 525px; }
+.brand-box4 .image img { height: 370px; }
+.brand-box4 .brand-logo { text-align: right; }
+.brand-box4 .text { width: 430px; }
+.brand-box4 .know-box { top: 0; left: -225px; background-color: #231f20; }
 
 /* Product page */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003237}}
-.product-banner {
-  background: url(../images/product-banner.jpg) no-repeat right 0;
-}
+.product-banner { background: url(../images/product-banner.jpg) no-repeat right 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003239}}
-.product-box1 .image {
-  width: 576px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003240}}
-.product-box1 .image img {
-  height: 401px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003242}}
-.product-box1 .text {
-  width: 575px;
-}
+.product-box1 .image { width: 576px; }
+.product-box1 .image img { height: 401px; }
+.product-box1 .text { width: 575px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003245}}
-.product-box2 .image {
-  width: 567px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003246}}
-.product-box2 .image img {
-  height: 396px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003248}}
-.product-box2 .text {
-  width: 484px;
-  margin-left: 93px;
-  margin-top: 26px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003249}}
-.product-box2 .other {
-  width: 422px;
-}
+.product-box2 .image { width: 567px; }
+.product-box2 .image img { height: 396px; }
+.product-box2 .text { width: 484px; margin-left: 93px; margin-top: 26px; }
+.product-box2 .other { width: 422px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003252}}
-.product-box3 .image {
-  width: 568px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003253}}
-.product-box3 .image img {
-  height: 370px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003255}}
-.product-box3 .text {
-  width: 577px;
-}
+.product-box3 .image { width: 568px; }
+.product-box3 .image img { height: 370px; }
+.product-box3 .text { width: 577px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003257}}
-.product-box4 {
-  width: 1061;
-  margin: auto;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003258}}
-.product-box4 .text {
-  width: 457px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003259}}
-.product-box4 .text .other {
-  width: 386px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003261}}
-.product-box4 .image {
-  width: 603px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003262}}
-.product-box4 .image img {
-  height: 404px;
-}
+.product-box4 { width: 1061; margin: auto; }
+.product-box4 .text { width: 457px; }
+.product-box4 .text .other { width: 386px; }
+.product-box4 .image { width: 603px; }
+.product-box4 .image img { height: 404px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003265}}
-.brand .top-footer, .product .top-footer {
-  margin-top: 45px;
-}
+.brand .top-footer, .product .top-footer { margin-top: 45px; }
 
 /* Product Detail 1*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003267}}
-.detail-banner {
-  height: 288px;
-  width: 100%;
-}
+.detail-banner { height: 288px; width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003268}}
-.detail-wrapper {
-  width: 1109px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  margin: -64px auto 55px;
-  padding: 28px 53px 29px 111px;
-  background: #fff;
-  position: relative;
-  z-index: 1;
-}
+.detail-wrapper { width: 1109px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; margin: -64px auto 55px; padding: 28px 53px 29px 111px; background: #fff; position: relative; z-index: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003269}}
-.breadcrumb {
-  margin-bottom: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003270}}
-.breadcrumb li {
-  float: left;
-  border-right: 1px solid #333;
-  margin-right: 5px;
-  padding-right: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003271}}
-.breadcrumb li:last-child {
-  border: none;
-}
+.breadcrumb { margin-bottom: 20px; }
+.breadcrumb li { float: left; border-right: 1px solid #333; margin-right: 5px; padding-right: 5px; }
+.breadcrumb li:last-child { border: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003274}}
-.content-pr1 .sidebar {
-  min-height: 817px;
-  margin-right: 37px;
-}
+.content-pr1 .sidebar { min-height: 817px; margin-right: 37px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003276}}
-.content-detail .sidebar {
-  width: 152px;
-  float: left;
-  min-height: 311px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003277}}
-.content-detail .right-content {
-  float: left;
-  width: 756px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003278}}
-.content-detail .right-content .col-left {
-  width: 395px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 60px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003279}}
-.content-detail .right-content .col-left > img {
-  position: relative;
-  left: -184px;
-  max-width: 1109px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003281}}
-.content-detail .right-content .col-right {
-  display: inline-block;
-  vertical-align: top;
-  width: 297px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003282}}
-.content-detail .right-content .col-right > img {
-  right: -20px;
-  position: relative;
-  max-width: 1109px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003285}}
-.content-detail h1.title {
-  width: 627px;
-  margin-bottom: 40px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003286}}
-.content-detail h3 {
-  font-size: 16px;
-  padding-bottom: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003287}}
-.content-detail h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003288}}
-.content-detail p {
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 19px;
-}
+.content-detail .sidebar { width: 152px; float: left; min-height: 311px; }
+.content-detail .right-content { float: left; width: 756px; }
+.content-detail .right-content .col-left { width: 395px; display: inline-block; vertical-align: top; margin-right: 60px; }
+.content-detail .right-content .col-left > img { position: relative; left: -184px; max-width: 1109px; }
+.content-detail .right-content .col-right { display: inline-block; vertical-align: top; width: 297px; }
+.content-detail .right-content .col-right > img { right: -20px; position: relative; max-width: 1109px; }
+.content-detail h1.title { width: 627px; margin-bottom: 40px; }
+.content-detail h3 { font-size: 16px; padding-bottom: 5px; }
+.content-detail h2 { font-size: 20px; margin-bottom: 20px; margin-top: 10px; }
+.content-detail p { margin-bottom: 20px; font-size: 14px; line-height: 19px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003290}}
-.share {
-  float: right;
-  margin-right: 60px;
-  width: 300px;
-  margin-top: 40px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003291}}
-.share .title {
-  font-size: 14px;
-  margin-right: 16px;
-  float: left;
-  line-height: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003292}}
-.share li {
-  float: left;
-  margin-right: 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003293}}
-.share li img {
-  width: 28px;
-  vertical-align: middle;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projects\/ADG\/sass\/style\.scss}line{font-family:\00003294}}
-.share li:last-child {
-  margin-right: 0;
-}
+.share { float: right; margin-right: 60px; width: 300px; margin-top: 40px; }
+.share .title { font-size: 14px; margin-right: 16px; float: left; line-height: 28px; }
+.share li { float: left; margin-right: 15px; }
+.share li img { width: 28px; vertical-align: middle; }
+.share li:last-child { margin-right: 0; }
