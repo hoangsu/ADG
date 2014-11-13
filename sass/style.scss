@@ -267,7 +267,7 @@
 .detail-banner {height: 288px; width: 100%;}
 .detail-wrapper { width: 1109px;@include box-sizing(border-box);  margin: -64px auto 55px; padding:28px 53px 29px 111px; background: #fff; position: relative; z-index: 1;}
 .breadcrumb {@extend .clearfix;margin-bottom: 20px;
-	li{float: left; border-right:1px solid #333; margin-right: 5px; padding-right: 5px;
+	li{float: left; border-right:1px solid #333; margin-right: 5px; padding-right: 5px; font-size: 14px;
 		&:last-child{border: none;}
 	}
 }
@@ -277,9 +277,20 @@
 	.right-content {float: left; width: 756px;
 		.col-left{width: 395px;display: inline-block; vertical-align: top; margin-right: 60px;
 			>img {position: relative; left: -184px;max-width: 1109px;}
+			&.text-left {margin-left: -186px; width: 580px;}
+			&.line-left {width: 514px;
+				.color-line {margin-left: -186px;}
+			}
+			&.big-news-d {width: 260px;
+				&.text-left {width: 400px}
+			}
 		}
 		.col-right{display: inline-block; vertical-align: top;width: 297px;
 			>img {right: -20px; position: relative; max-width: 1109px;}
+			&.big-news-d {width: 432px;}
+		}
+		.no-margin.col-left,.no-margin.col-right{
+			img{ position: static;}
 		}
 	}
 	h1.title {width: 627px; margin-bottom: 40px;}
