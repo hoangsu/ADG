@@ -4,13 +4,13 @@
 #header {background: #fff; height: 68px; padding-top: 49px;}
 #header .logo {display: inline-block; padding-left: 37px;}
 .menu {float: right; padding-right: 35px;
-	ul li {float: left; position: relative;padding:12px 15px 36px; z-index: 3;
+	ul li {float: left; position: relative;padding:12px 15px 36px; z-index: 3;font-family: $IrisAzoBold;
 		&.menu-icon {line-height: 30px;
 			img {vertical-align: middle;}
 			&:hover a {border-bottom: 0}
 		}
 		a {text-transform: uppercase; font-weight: bold; line-height: 30px; display: inline-block; font-size: 14px;}
-		>a {border-bottom: 3px solid #fff;}
+		>a {border-bottom: 3px solid #fff; white-space: nowrap;}
 		&:hover,&.acitve {
 			> a {border-bottom: 3px solid $blue;}
 			.sub-menu {display: block}
@@ -36,9 +36,9 @@
 .new-menu .sub-menu .sm-item {
 	a:hover,&.active a {background: $orange;}
 }
-.flexslider .slides li {background-color: #000;
-	> a {float: right; width:68.7%;}
-	.flex-caption {background: #000; height: 100%;padding:59px 32px 10px 81px; float: left; width:31.3%;color:#fff; @include box-sizing(border-box);
+.flexslider .slides li { position: relative;
+	.flex-caption {background: url(../images/caption.png) repeat 0 0;padding:59px 32px 10px 45px; height: 387px;
+	 float: left; width:333px;color:#fff; @include box-sizing(border-box);position: absolute; left:38px; top:0;
 		h1 {margin-bottom: 16px; line-height: 34px; font-size: 28px;}
 		p {line-height: 16px; margin-bottom: 75px; font-size: 14px;}
 		img {width: auto;}
@@ -46,11 +46,11 @@
 }
 .note {background: #fff; height: 162px; text-align: center;
 	.inner {border-bottom: 5px solid #929292; height: 100%;}
-	.note-content {width:634px; margin:0 auto; padding-top: 28px;
+	.note-content {width:706px; margin:0 auto; padding-top: 28px;
 		p {font-weight: bold; font-size: 16px; padding-left: 51px; padding-top: 10px;}
-		img {float: left; padding-top: 16px;}
-		h1 {padding-top: 23px; text-align: left;padding-left: 80px;font-style: italic; color:#9c1921; font-size: 22px; font-family: "Palatino Linotype", arial, sans-serif;}
-		a.readmore {float: right; margin-right: 39px; margin-top: 6px; font-size: 13px;}
+		img {float: left; padding-top: 16px; padding-right: 15px;}
+		h1 {padding-top: 23px; text-align: left;padding-left: 80px;font-style: italic; color:#005aab; font-size: 22px; font-family: "Palatino Linotype", arial, sans-serif;}
+		a.readmore {float: right; margin-right: 39px; margin-top: 6px; font-size: 13px; white-space: nowrap;}
 	}
 }
 .box.home-full { margin-top: 63px; margin-bottom: 27px;
@@ -93,7 +93,7 @@
 #footer { background: #162b59; height: 187px; @include box-sizing(border-box); padding-top: 14px; color:#cccccc;
 	.inner {
 		.footer-col {width: 158px; border-right:1px solid #666666;padding-left: 37px; float: left; min-height: 131px;
-			h3.title {color:#33ccff; font-size: 16px;line-height: 22px; font-family: $Arial; margin-top: 10px;}
+			h3.title {color:#33ccff; font-size: 18px;line-height: 22px; font-family: $Arial; margin-top: 10px;}
 			ul li { font-size: 14px; line-height: 22px;}
 		}
 	 }
@@ -303,5 +303,50 @@
 	li{float: left; margin-right: 15px; 
 		img{width: 28px; vertical-align: middle;}
 		&:last-child{margin-right: 0;}
+	}
+}
+/* News new */
+.news {margin-top:30px; }
+.top-nmenu {padding-left: 69px; position: relative;z-index: 1; @extend .clearfix; margin-bottom: 26px;
+	h1 {display: block; border-bottom: 3px solid #999;padding-bottom: 15px; font-size: 28px;}
+}
+.nmenu {float: right;
+	li {
+		a {font-size: 14px; background: #fff; display: block; padding:6px 10px 6px 22px;
+			&:hover {background: #666; color: #fff;}
+		}
+		.sub-menu {position: absolute; left:0; top:100%; width: 100%;}
+	}
+	>li { float: left; min-width: 181px; margin-left: 10px;position: relative;
+		>a {overflow: hidden;}
+		>i {float: right; cursor: pointer; background: url(../images/arr-down.png) no-repeat center center;
+			width: 35px; height: 28px; display: inline-block;
+		}
+	} 
+}
+.flat-news { margin-bottom: 50px;
+	.full-inner {@extend .clearfix; margin:0 -10px 30px;}
+	.col {float: left; padding: 0 10px;position: relative; height: 323px; @include box-sizing(border-box);
+		&:last-child{padding-right: 0;}
+		img {width: 100%; height: 297px;}
+		.caption {width: 100%; padding-left: 22px; 
+			position: relative;top:-100px;@include box-sizing(border-box);
+			.caption-inner {background: #fff; padding:10px 15px 17px 14px;}
+			i[class^="icon"] {background: url(../images/icon-n.png) no-repeat 0 0; display: inline-block; width: 24px;
+			 height:21px; vertical-align: middle; padding-right: 3px; }
+			h3.cat {margin-bottom: 14px; font-size: 11px; 
+				text-transform: uppercase; font-weight: normal; 
+				font-family: $Arial;}
+			p {font:bold 16px/20px $IrisAzoBold;}
+			&:after {content: ""; display: block; width: 100%; height: 3px;}
+			i.icon-cty {background-position: 0 -55px;}
+			i.icon-sp1 {background-position: 0 -100px;}
+		}
+	}
+	.bignews {width:40%; }
+	.smallnews {width: 20%;
+		.caption  {
+			.caption-inner  {padding-right: 5px;}
+		}
 	}
 }
