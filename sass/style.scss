@@ -93,7 +93,7 @@
 #footer { background: #162b59; height: 187px; @include box-sizing(border-box); padding-top: 14px; color:#cccccc;
 	.inner {
 		.footer-col {width: 158px; border-right:1px solid #666666;padding-left: 37px; float: left; min-height: 131px;
-			h3.title {color:#33ccff; font-size: 18px;line-height: 22px; font-family: $Arial; margin-top: 10px;}
+			h3.title {color:#33ccff; font-size: 18px;line-height: 22px; margin-top: 10px;}
 			ul li { font-size: 14px; line-height: 22px;}
 		}
 	 }
