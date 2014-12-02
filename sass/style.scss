@@ -141,7 +141,7 @@
 .history .full-inner {margin-bottom: 0}
 .history-box { 
 	.text {padding-top: 80px; height: 370px;
-		h1.history-title {font-size: 22px; font-weight: normal; margin-bottom: 18px;}
+		h1.history-title {font-size: 22px; font-weight: normal; margin-bottom: 18px; line-height: 30px;}
 		&:after {display: block; background: $blue; width:89px; height: 3px; content:""; position: absolute; bottom:20px; left: 36px;}
 	}
 }

@@ -253,7 +253,7 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 .history .full-inner { margin-bottom: 0; }
 
 .history-box .text { padding-top: 80px; height: 370px; }
-.history-box .text h1.history-title { font-size: 22px; font-weight: normal; margin-bottom: 18px; }
+.history-box .text h1.history-title { font-size: 22px; font-weight: normal; margin-bottom: 18px; line-height: 30px; }
 .history-box .text:after { display: block; background: #005bac; width: 89px; height: 3px; content: ""; position: absolute; bottom: 20px; left: 36px; }
 
 .history-box.box2014 .text:after { background-color: #b69558; }
