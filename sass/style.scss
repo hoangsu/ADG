@@ -9,7 +9,7 @@
 			img {vertical-align: middle;}
 			&:hover a {border-bottom: 0}
 		}
-		a {text-transform: uppercase; font-weight: bold; line-height: 30px; display: inline-block; font-size: 14px;}
+		a {text-transform: uppercase; line-height: 30px; display: inline-block; font-size: 14px;}
 		>a {border-bottom: 3px solid #fff; white-space: nowrap;}
 		&:hover,&.acitve {
 			> a {border-bottom: 3px solid $blue;}
@@ -138,9 +138,9 @@
 		}
 	}
 }
-.history .full-inner {margin-bottom: 0}
+.history .full-inner {margin-bottom: 10px}
 .history-box { 
-	.text {padding-top: 80px; height: 370px;
+	.text {padding-top: 80px; min-height: 370px; height: auto;
 		h1.history-title {font-size: 22px; font-weight: normal; margin-bottom: 18px; line-height: 30px;}
 		&:after {display: block; background: $blue; width:89px; height: 3px; content:""; position: absolute; bottom:20px; left: 36px;}
 	}
@@ -171,7 +171,7 @@
 .history-box.box2007 {
 	margin-top: -56px;
 }
-.history-box.box-last {height: 361px; background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative;
+.history-box.box-last {/* height: 361px; */ background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative;
 	.box-year {background: #034988; width:273px; height: 81px;position: absolute; bottom:0; left:-273px;
 		h1 {float: right; color:#fff; margin-top: 20px; font-weight: normal; font-size: 22px; margin-right: 38px;
 			span {color:#0099ff}
