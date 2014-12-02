@@ -14,7 +14,7 @@ li { list-style-type: none; }
 
 body { font: 12px Arial, sans-serif; color: #333; background: url(../images/bg.png) repeat 0 0; }
 
-h1, h2, h3, h4, h5 { font-family: "iris_azo_bold", Arial, sans-serif; }
+h1, h2, h3, h4, h5 { font-family: "iris_azo_bold", Arial, sans-serif; font-weight: normal; }
 
 h1 { font-size: 28px; }
 
@@ -156,7 +156,7 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 
 .sub-menu .sm-item { width: 160px; float: right; clear: both; }
 .sub-menu .sm-item > a { padding: 0 5px; display: block; line-height: 28px; position: relative; z-index: 1; }
-.sub-menu .sm-item .sm-content { display: none; left: 5px; position: absolute; z-index: 0; top: 5px; }
+.sub-menu .sm-item .sm-content { display: none; left: 5px; position: absolute; z-index: 0; top: 5px; font-family: Arial, sans-serif; }
 .sub-menu .sm-item .sm-content p { margin: 10px 5px 5px; clear: both; }
 .sub-menu .sm-item .sm-content img { width: 126px; height: 106px; }
 .sub-menu .sm-item.active .sm-content, .sub-menu .sm-item:hover .sm-content { display: block; }

@@ -23,7 +23,7 @@
 
 .sub-menu .sm-item {width: 160px; float: right; clear: both;
 	> a {padding:0 5px; display: block; line-height: 28px; position: relative; z-index: 1;}
-	.sm-content { display: none; left:5px; position: absolute; z-index: 0; top:5px;
+	.sm-content { display: none; left:5px; position: absolute; z-index: 0; top:5px;font-family: $Arial;
 		p {margin:10px 5px 5px; clear: both;}
 		img {width:126px; height: 106px;}
 	}
