@@ -69,7 +69,7 @@ h1 { font-size: 28px; line-height: 34px; }
 .box .text .other { position: absolute; bottom: 27px; left: 38px; white-space: nowrap; }
 .box .text .other .more-link { font-size: 13px; text-transform: uppercase; color: #666666; text-decoration: none; font-family: "iris_azo", Arial, sans-serif; margin-left: 9px; }
 .box .image { float: left; }
-.box .image img { height: 324px; width: 295px; }
+.box .image img { height: 324px; width: 100%; }
 
 h1.title-box { margin-bottom: 18px; font-size: 22px; line-height: 30px; }
 h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; margin-top: 13px; }
