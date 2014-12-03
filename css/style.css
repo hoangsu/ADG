@@ -376,7 +376,7 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 .content-detail .right-content .col-right > img { right: -20px; position: relative; max-width: 1109px; }
 .content-detail .right-content .col-right.big-news-d { width: 432px; }
 .content-detail .right-content .no-margin.col-left img, .content-detail .right-content .no-margin.col-right img { position: static; }
-.content-detail h1.title { width: 627px; margin-bottom: 40px; }
+.content-detail h1.title { margin-bottom: 40px; }
 .content-detail h3 { font-size: 16px; padding-bottom: 5px; }
 .content-detail h2 { font-size: 20px; margin-bottom: 20px; margin-top: 10px; }
 .content-detail p { margin-bottom: 20px; font-size: 14px; line-height: 19px; }
