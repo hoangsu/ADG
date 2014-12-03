@@ -106,7 +106,7 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 
 .box-video .video { position: relative; z-index: 1; }
 .box-video .video video { max-width: 100%; max-height: 100%; }
-.box-video .video .overlay { position: absolute; background: url(../images/video-overlay.png) repeat 0 0; width: 100%; height: 100%; text-align: center; }
+.box-video .video .overlay { z-index: 99; position: absolute; background: url(../images/video-overlay.png) repeat 0 0; width: 100%; height: 100%; text-align: center; }
 .box-video .video .overlay button { outline: none; position: absolute; top: 50%; left: 50%; border: none; text-indent: -99999px; background: url(../images/video-icon.png) 0 0; margin-top: -20px; margin-left: -20px; width: 40px; height: 40px; display: inline-block; vertical-align: middle; cursor: pointer; }
 .box-video .video .overlay button.pause { background-position: 0 bottom; }
 
@@ -146,7 +146,7 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 .menu ul li.menu-icon { line-height: 30px; }
 .menu ul li.menu-icon img { vertical-align: middle; }
 .menu ul li.menu-icon:hover a { border-bottom: 0; }
-.menu ul li a { text-transform: uppercase; font-weight: bold; line-height: 30px; display: inline-block; font-size: 14px; }
+.menu ul li a { text-transform: uppercase; line-height: 30px; display: inline-block; font-size: 14px; }
 .menu ul li > a { border-bottom: 3px solid #fff; white-space: nowrap; }
 .menu ul li:hover > a, .menu ul li.acitve > a { border-bottom: 3px solid #005bac; }
 .menu ul li:hover .sub-menu, .menu ul li.acitve .sub-menu { display: block; }
@@ -250,9 +250,9 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 .history-note .inner .text h1 { padding-top: 30px; padding-bottom: 20px; }
 .history-note .inner .text p { font-size: 14px; line-height: 19px; }
 
-.history .full-inner { margin-bottom: 0; }
+.history .full-inner { margin-bottom: 10px; }
 
-.history-box .text { padding-top: 80px; height: 370px; }
+.history-box .text { padding-top: 80px; min-height: 370px; height: auto; }
 .history-box .text h1.history-title { font-size: 22px; font-weight: normal; margin-bottom: 18px; line-height: 30px; }
 .history-box .text:after { display: block; background: #005bac; width: 89px; height: 3px; content: ""; position: absolute; bottom: 20px; left: 36px; }
 
@@ -273,7 +273,7 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 
 .history-box.box2007 { margin-top: -56px; }
 
-.history-box.box-last { height: 361px; background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative; }
+.history-box.box-last { /* height: 361px; */ background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative; }
 .history-box.box-last .box-year { background: #034988; width: 273px; height: 81px; position: absolute; bottom: 0; left: -273px; }
 .history-box.box-last .box-year h1 { float: right; color: #fff; margin-top: 20px; font-weight: normal; font-size: 22px; margin-right: 38px; }
 .history-box.box-last .box-year h1 span { color: #0099ff; }
