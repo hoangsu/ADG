@@ -61,7 +61,7 @@ h1 { font-size: 28px; line-height: 34px; }
 
 .clear { clear: both; }
 
-.clearfix:after, .full-section:after, .full-inner:after, .box:after, .join-text:after, .breadcrumb:after, .share:after, .top-nmenu:after, .flat-news .full-inner:after { content: ""; display: table; clear: both; }
+.clearfix:after, .full-section:after, .full-inner:after, .box:after, .join-text:after, .history-box.box-last:after, .breadcrumb:after, .share:after, .top-nmenu:after, .flat-news .full-inner:after { content: ""; display: table; clear: both; }
 
 .box .text { background: #fff; float: left; position: relative; padding: 28px 30px 59px 36px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; height: 324px; }
 .box .text p { font-size: 14px; line-height: 19px; }
@@ -274,10 +274,10 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 .history-box.box2007 { margin-top: -56px; }
 
 .history-box.box-last { /* height: 361px; */ background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative; }
-.history-box.box-last .box-year { background: #034988; width: 273px; height: 81px; position: absolute; bottom: 0; left: -273px; }
-.history-box.box-last .box-year h1 { float: right; color: #fff; margin-top: 20px; font-weight: normal; font-size: 22px; margin-right: 38px; }
+.history-box.box-last .box-year { /* background: #034988; width:273px; */ height: 81px; /* position: absolute; bottom:0; left:-273px; */ }
+.history-box.box-last .box-year h1 { /* float: right; */ color: #fff; margin-top: 20px; font-weight: normal; font-size: 22px; margin-right: 38px; padding: 28px 0 0 36px; }
 .history-box.box-last .box-year h1 span { color: #0099ff; }
-.history-box.box-last .text { width: 100%; background: #034988; color: #fff; height: 100%; width: 576px; padding-top: 28px; }
+.history-box.box-last .text { width: 100%; background: #034988; color: #fff; height: 100%; padding-top: 10px; }
 .history-box.box-last .text:after { background: #999999; }
 .history-box.box-last .text h2 { font: normal 14px Arial, sans-serif; }
 .history-box.box-last .text h1 { color: #00aeef; }

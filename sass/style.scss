@@ -172,13 +172,15 @@
 .history-box.box2007 {
 	margin-top: -56px;
 }
-.history-box.box-last {/* height: 361px; */ background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative;
-	.box-year {background: #034988; width:273px; height: 81px;position: absolute; bottom:0; left:-273px;
-		h1 {float: right; color:#fff; margin-top: 20px; font-weight: normal; font-size: 22px; margin-right: 38px;
+.history-box.box-last {/* height: 361px; */ background: #034988; margin-top: 131px;@extend .clearfix;
+	margin-bottom: 40px; position: relative;
+	.box-year {/* background: #034988; width:273px; */ height: 81px;/* position: absolute; bottom:0; left:-273px; */
+		h1 {/* float: right; */ color:#fff; margin-top: 20px; font-weight: normal; 
+			font-size: 22px; margin-right: 38px; padding:28px 0 0 36px;
 			span {color:#0099ff}
 		}
 	}
-	.text { width:100%; background: #034988; color:#fff; height: 100%; width: 576px; padding-top: 28px;
+	.text { width:100%; background: #034988; color:#fff; height: 100%; padding-top: 10px;
 		&:after {background: #999999; }
 		h2 {font:normal 14px $Arial;}
 		h1 {color:#00aeef;}
