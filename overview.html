@@ -206,8 +206,21 @@
 							<p>Pepsi is one of the world's most iconic and recognized consumer brands globally. Today, the Pepsi portfolio includes three products - Pepsi, Diet Pepsi and Pepsi MAX — that each generates more than $1 billion in annual retail sales. Learn more about our flagship brand.</p>
 					</div>
 					<div class="image">
-						<img src="images/o5.jpg" alt="">
+						<div class="flexslider">
+						  <ul class="slides">
+						    <li><img src="images/o5.jpg" alt=""></li>
+						    <li><img src="images/o5.jpg" alt=""></li>
+						    <li><img src="images/o5.jpg" alt=""></li>
+							</ul>
+						</div>
 					</div>
+					<script type="text/javascript" charset="utf-8">
+					  $(window).load(function() {
+					    $('.flexslider').flexslider({
+					    	controlNav:false
+					    });
+					  });
+					</script>
 				</div>
 			</div>
 		</div>
@@ -251,5 +264,6 @@
 			</div>
 		</div>
 	</div>
+	
 </body>
 </html>
