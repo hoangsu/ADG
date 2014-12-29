@@ -104,11 +104,11 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 .year-label h1 { font-size: 22px; font-weight: normal; line-height: 40px; }
 .year-label h1 span { color: #0099ff; }
 
-.box-video .video { position: relative; z-index: 1; }
-.box-video .video video { max-width: 100%; max-height: 100%; }
-.box-video .video .overlay { z-index: 99; position: absolute; background: url(../images/video-overlay.png) repeat 0 0; width: 100%; height: 100%; text-align: center; }
-.box-video .video .overlay button { outline: none; position: absolute; top: 50%; left: 50%; border: none; text-indent: -99999px; background: url(../images/video-icon.png) 0 0; margin-top: -20px; margin-left: -20px; width: 40px; height: 40px; display: inline-block; vertical-align: middle; cursor: pointer; }
-.box-video .video .overlay button.pause { background-position: 0 bottom; }
+.video { position: relative; z-index: 1; }
+.video video { max-width: 100%; max-height: 100%; }
+.video .overlay { z-index: 99; position: absolute; background: url(../images/video-overlay.png) repeat 0 0; width: 100%; height: 100%; text-align: center; }
+.video .overlay button { outline: none; position: absolute; top: 50%; left: 50%; border: none; text-indent: -99999px; background: url(../images/video-icon.png) 0 0; margin-top: -20px; margin-left: -20px; width: 40px; height: 40px; display: inline-block; vertical-align: middle; cursor: pointer; }
+.video .overlay button.pause { background-position: 0 bottom; }
 
 .history-box.box-video .video { width: 437px; float: right; }
 .history-box.box-video .text { margin-top: -103px; width: 100%; clear: both; padding-top: 140px; height: 299px; }
@@ -273,7 +273,7 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 
 .history-box.box2007 { margin-top: -56px; }
 
-.history-box.box-last { /* height: 361px; */ background: #034988; margin-top: 131px; margin-bottom: 40px; position: relative; }
+.history-box.box-last { /* height: 361px; */ background: #034988; margin-bottom: 40px; position: relative; }
 .history-box.box-last .box-year { /* background: #034988; width:273px; */ height: 81px; /* position: absolute; bottom:0; left:-273px; */ }
 .history-box.box-last .box-year h1 { /* float: right; */ color: #fff; margin-top: 20px; font-weight: normal; font-size: 22px; margin-right: 38px; padding: 28px 0 0 36px; }
 .history-box.box-last .box-year h1 span { color: #0099ff; }
@@ -390,7 +390,7 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 /* News new */
 .news { margin-top: 30px; }
 
-.top-nmenu { padding-left: 69px; position: relative; z-index: 1; margin-bottom: 26px; }
+.top-nmenu { padding-left: 69px; position: relative; z-index: 10; margin-bottom: 26px; }
 .top-nmenu h1 { display: block; border-bottom: 3px solid #999; padding-bottom: 15px; font-size: 28px; }
 
 .nmenu { float: right; }
@@ -423,3 +423,16 @@ h1.title-box:after { height: 3px; width: 72px; content: ""; display: block; marg
 .flat-news .bignews { width: 40%; }
 .flat-news .smallnews { width: 20%; }
 .flat-news .smallnews .caption .caption-inner { padding-right: 5px; }
+
+.images-lib { max-width: 944px; margin-bottom: 60px; }
+.images-lib .flexslider .slides li .flex-caption { color: #333; width: 100%; height: auto; background: #fff; padding: 15px 30px; position: static; font-size: 13px; }
+.images-lib .flexslider .slides li .flex-caption p { margin: 0; }
+
+#carousel { background-color: #666666; padding: 17px; position: relative; overflow: hidden; box-sizing: border-box; }
+#carousel:after { position: absolute; content: ""; background-color: #005aab; height: 2px; width: 220px; bottom: -2px; left: 50%; margin-left: -110px; }
+#carousel li { float: left; margin: 0 10px; }
+#carousel li img { width: 132px; height: 85px; }
+#carousel li.flex-active-slide img { border: 2px solid #005baa; width: 128px; height: 81px; }
+
+.video-detail { max-width: 944px; margin-bottom: 60px; }
+.video-detail h3.title { font-size: 16px; margin-top: 15px; margin-left: 30px; }

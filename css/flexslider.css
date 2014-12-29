@@ -54,3 +54,12 @@ html[xmlns] .slides {display: block;}
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
 }
+.flex-control-thumbs {background-color: #666666; padding:17px; position: relative; overflow: hidden;
+	box-sizing: border-box; 
+}
+.flex-control-thumbs:after {position: absolute; content: ""; background-color: #005aab; height: 2px; width: 220px;
+	bottom:-2px; left:50%; margin-left: -110px;
+}
+.flex-control-thumbs li {float: left;}
+.flex-control-thumbs li img {margin:0 9px; width: 132px; height: 85px;}
+.flex-control-thumbs li img.flex-active{border:2px solid #005baa; margin:-2px 7px 0;}
