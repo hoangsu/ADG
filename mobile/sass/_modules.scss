@@ -7,10 +7,10 @@ li {list-style-type: none;}
 body {font:13px $Arial; color:#333; background: url(../images/bg.png) repeat 0 0; position: relative;}
 h1, h2, h3, h4, h5 {font-family: $IrisAzoBold;font-weight: normal;line-height: 1.22; }
 h1 {font-size: 21px; line-height: 26px;}
+h3 {font-size: 16px; line-height: 22px;}
 p {font-size: 13px; line-height: 16px;}
 .inner {width:100%;@include box-sizing(border-box); padding:0 10px;}
-.col50 {width:100%;}.col51 {width:100%;}.col49 {width:100%;}
-.full-section,.full-inner {width: 100%;@extend .clearfix;}
+.full-section,.full-inner {@extend .clearfix;}
 .left {float:left;}.right {float: right;}
 .arrow-left {background: url(../images/arrow-mb1.png) no-repeat 0 0; width:35px;
  height: 18px; position: absolute; top:-18px; left: 50%; margin-left: -17px}
@@ -29,7 +29,7 @@ p {font-size: 13px; line-height: 16px;}
 .orange1 {background-color: $orange1;}
 .darkred {background-color: $darkred;}
 .wood {background-color: $wood;}
-.blue-non {height: 31px; line-height: 31px; background-color: #00aeef; color: #fff;border:2px solid #fff;
+.blue-non {background-color: #00aeef; color: #fff;
 	&:hover { background:url(../images/arrow-button-nb.png) 86px center no-repeat #fff; border:2px solid $blue1;
 	color:$blue1;}
 }
@@ -37,12 +37,12 @@ p {font-size: 13px; line-height: 16px;}
 .clearfix:after {content: "";display: table;clear: both;}
 .box {margin-bottom: 10px;
 	@extend .clearfix;
-	.text{background: #fff; position: relative; 
+	.text{background: #fff; position: relative; z-index: 1;
 		padding:15px 10px 72px; @include box-sizing(border-box); 
-		p {font-size: 14px; line-height: 19px;}
+		p { line-height: 19px;}
 		p.source {margin-top: 20px;}
 		.other {position:absolute;bottom:17px; left:10px; white-space: nowrap;
-			.more-link {font-size: 11 px; text-transform: uppercase; color:#666666; text-decoration: none; font-family: $IrisAzo; margin-left: 9px;}
+			.more-link {font-size: 11px; text-transform: uppercase; color:#666666; text-decoration: none; font-family: $IrisAzo; margin-left: 9px;}
 		}
 	}
 	.image {
@@ -62,33 +62,28 @@ h1.title-box { margin-bottom: 18px; font-size: 22px; line-height: 30px;
 .wood1-line:after {background-color: $wood1;}
 .white-line:after {background-color: #fff;}
 .orange1-line:after {background-color: $orange1;}
+.main-content {margin-top: 20px;}
 .top-banner {height: 225px;
-	.left-title {height: 100%; @include box-sizing(border-box); padding-top: 60px; padding-left: 82px;
-		h1 { font-size: 28px;}
+	.left-title {height: 100%; @include box-sizing(border-box);background: url(../images/bg-black.png) 0 0 repeat; width: 50%;
+	 	padding-top: 60px; padding-left: 10px;
+	 	h1 {color:#fff;}
 	}
 }
-.detail-banner {
-	img{margin-top: -13px;}
-}
-.border-bottom5 {border-bottom: 5px solid #929292; }
-.year-label {text-align: center; background: url(../images/year-label.png) no-repeat 0 0; width:90px; height: 55px; position: absolute; top:0; left:36px; color:#fff;
-	h1 { font-size: 22px; font-weight: normal; line-height: 40px;
+.border-bottom5 {border-bottom: 3px solid #929292; }
+.year-label {text-align: center; background: url(../images/year-label.png) no-repeat 0 0;
+ width:74px; height: 45px; background-size: 74px auto; position: absolute; top:0; 
+ left:16px; color:#fff;
+	h1 { font-size: 18px; font-weight: normal; line-height: 32px;font-family: $IrisAzo;
 		span {color:#0099ff;}
 	} 
 }
-
 .video { position: relative; z-index: 1; 
-	video {max-width:100%; max-height: 100%; }
+	video {width: 100%; }
 	.overlay {z-index: 99; position: absolute; background: url(../images/video-overlay.png) repeat 0 0; width: 100%; height: 100%; text-align: center;
 		button {outline: none; position: absolute; top: 50%; left:50%; border:none; text-indent: -99999px; background: url(../images/video-icon.png) 0 0; margin-top: -20px; margin-left: -20px; width:40px; height: 40px; display: inline-block;vertical-align: middle; cursor: pointer;
 			&.pause {background-position: 0 bottom;}
 		}
 	}
-}
-
-.history-box.box-video {
-	.video {width:100%;float: right; }
-	.text {margin-top: -103px; width:100%; clear: both; padding-top: 140px; height: 299px;}
 }
 .group-box {
 	.text {padding-top: 0;
@@ -96,25 +91,4 @@ h1.title-box { margin-bottom: 18px; font-size: 22px; line-height: 30px;
 			p {line-height: 55px;font-size: 15px; font-weight: bold; }
 		}
 	} 
-}
-.brand-box { position: relative;
-	.text {height: 370px;
-		h1.title-box {font-size: 28px;}
-	}
-	.brand-logo img{display: block; margin-bottom:35px; }
-	.right-box {position: absolute; }
-}
-.know-box {width: 100%; float: left; color:#fff; text-align: center; height: 190px; @include box-sizing(border-box); padding: 43px 20px; position: absolute; bottom:-27px; right:-37px;
-	h3 {font-size: 20px; font-weight: normal; margin-bottom: 20px;}
-	p {font-size: 14px; line-height: 19px;}
-}
-.product-box {
-	.text {}
-	.other {width: 100%;}
-}
-.color-line {width:100%; height: 3px; vertical-align: top;}
-.catalog {margin-top:60px;
-	a{font-size: 14px;}
-	img {border: 1px solid #bbb; margin-bottom: 20px;}
-	h3{margin-bottom: 5px;}
 }

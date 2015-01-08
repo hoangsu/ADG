@@ -17,8 +17,7 @@ $(document).ready(function() {
 		$(this).next().next("ul").toggleClass('menu-open');
 		$(this).next().next("ul").slideToggle();
 	});
-	$('.nmenu > li > i').click(function() {
-		$(this).parent().children('.sub-menu').slideToggle();
+	$("#sidr ul li i").click(function(event) {
+		$("#sidr ul li a.expand").click();
 	});
-	
 });
