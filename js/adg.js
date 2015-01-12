@@ -45,4 +45,7 @@ $(document).ready(function() {
 			});
 		})
 	})
+    $('#home-slider .flexslider').flexslider({
+    	controlNav:false
+    });
 });

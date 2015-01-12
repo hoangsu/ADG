@@ -124,7 +124,7 @@
 	.text {width: 506px; height: 423px;}
 }
 .overview996 {width: 996px; margin-left: 148px; margin-bottom: 9px;
-	.image { width:568px; overflow:hidden;height: 324px;
+	.image { width:568px; overflow-y:auto;height: 324px;
 		img {height: 324px}
 	}
 	.text {width: 428px; height: 370px}

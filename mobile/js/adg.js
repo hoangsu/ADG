@@ -1,13 +1,17 @@
 $(document).ready(function() {
+	$('#home-slider .flexslider').flexslider({
+		animation: "slide",
+		controlNav:false
+	});
 	$("#open-menu").click(function(event) {
 		$(this).toggleClass('transform-right');
 		$("#sidr").toggleClass('transform-left');
-		if ($("body").hasClass('margin-left')) {
+		if ($("body").hasClass('position')) {
+			$("body").removeClass('position');
 			$("body").animate({"left":"0"}, 400);
-			$("body").removeClass('margin-left');
 		}
 		else {
-			$("body").addClass('margin-left');
+			$("body").addClass('position');
 			$("body").animate({"left":"268px"}, 400);
 		}
 		
@@ -20,4 +24,24 @@ $(document).ready(function() {
 	$("#sidr ul li i").click(function(event) {
 		$("#sidr ul li a.expand").click();
 	});
+	$(".video").click(function() {
+		$(this).toggleClass('hide');
+	});
+	$('.video .overlay button').each(function(){
+		var myVideo = $(this).parent().next('video');
+		$(this).click(function(){
+			if ( myVideo.get(0).paused) {
+				myVideo.get(0).play();
+				$(this).addClass("pause");
+			}
+			else {
+				myVideo.get(0).pause();
+				$(this).removeClass("pause");
+			}
+			myVideo.bind("ended", function() {
+			   $(this).prev('.overlay').find('button').removeClass("pause");
+			   $(this).prev('.overlay').show();
+			});
+		})
+	})
 });

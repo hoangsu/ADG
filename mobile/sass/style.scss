@@ -32,7 +32,7 @@
 		h1 {padding-top: 13px; text-align: center;padding-left: 67px;font-style: italic; 
 			color:#005aab;line-height: 20px; font-size: 17px; font-family: "Palatino Linotype", arial, sans-serif;}
 		a.readmore {float: left; margin-right: 39px;  font-size: 13px;
-		 white-space: nowrap;display: block; width: 100%; text-align: left;}
+		 white-space: nowrap;display: block; width: 100%; text-align: left; margin-top: 10px;}
 	}
 }
 #home-content {margin-top: 10px;}
@@ -40,13 +40,10 @@
 	.text {padding-bottom: 40px;
 		.other {position: static;padding-bottom: 20px;}
 	}
-	.right-box {width:100%; margin-top: -50px; position: relative;
-		.orange {width: 225px; float: right; color:#fff; text-align: center; 
+	.right-box {width:100%; margin-top: -50px; position: relative;z-index: 1;
+		.orange {width: 225px; float: right; color:#fff; text-align: center; @include box-sizing(border-box);
 			 padding: 15px 10px 20px;
 			h3 {font-size: 17px; font-weight: normal; font-family: $IrisAzo;}
-		}
-		.image {
-			img {width: auto}
 		}
 	}
 } 
@@ -104,7 +101,9 @@
 /* Overview page */
 .overview .full-inner{margin-bottom: 5px}
 .overview-banner {background: url(../images/o-banner.jpg) no-repeat 0 0;}
-
+.overview996 {
+	.image {overflow-y:auto;height: 300px;}
+}
 /* History page */
 .history-banner {background-image: url(../images/h-banner.jpg); margin-bottom: 0}
 .history-note { background: #fff;margin-top: 20px;
@@ -215,14 +214,14 @@
 .top-nmenu { position: relative;z-index: 1; @extend .clearfix; margin-bottom: 10px;
 	h1 {display: block; border-bottom: 3px solid #999;padding-bottom: 15px; }
 }
-.nmenu {float: right; margin-right: 20px; margin-top: 20px;
+.nmenu {float: right; margin-right: 10px; margin-top: 20px; width: 80%;
 	li {
 		a {background: #fff; display: block; padding:6px 10px 6px 22px;
 			&:hover {background: #666; color: #fff;}
 		}
 		.sub-menu {position: absolute; left:0; top:100%; width: 100%; display: none; z-index: 9;}
 	}
-	>li {  width: 250px; display: block;position: relative; margin-bottom: 10px; 
+	>li { display: block;position: relative; margin-bottom: 10px; 
 		&:hover {
 			.sub-menu {display: block;}
 		}
@@ -382,3 +381,4 @@
     	-webkit-transform: translate3d(268px, 0px, 0px);transform: translate3d(268px, 0px, 0px);}
 .transform-left {-ms-transform: translate3d(0, 0px, 0px);
     	-webkit-transform: translate3d(0, 0px, 0px);transform: translate3d(0, 0px, 0px);}
+body.position {position: fixed;}
