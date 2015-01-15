@@ -22,7 +22,7 @@ $(document).ready(function() {
 		$(this).next().next("ul").slideToggle();
 	});
 	$("#sidr ul li i").click(function(event) {
-		$("#sidr ul li a.expand").click();
+		$(this).prev().click();
 	});
 	$(".video").click(function() {
 		$(this).toggleClass('hide');
